@@ -4,62 +4,71 @@
     "nome": "João Silva",
     "posicao": "Médio Centro",
     "numero": 15,
-    "escalao": "seniores"
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/joao_silva.jpg"
   },
   {
     "id": 2,
     "nome": "Alexandre Rodrigues",
     "posicao": "Extremo",
     "numero": 7,
-    "escalao": "seniores"
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/alexandre_rodrigues.jpg"
   },
   {
     "id": 3,
     "nome": "Rodrigo Dias",
     "posicao": "Defesa Central",
     "numero": 17,
-    "escalao": "seniores"
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/rodrigo_dias.jpg"
   },
   {
     "id": 4,
     "nome": "Luís Garcia",
     "posicao": "Trinco",
     "numero": 4,
-    "escalao": "seniores"
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/luis_garcia.jpg"
   },
   {
     "id": 5,
     "nome": "Miguel Santos",
     "posicao": "Avançado",
     "numero": 19,
-    "escalao": "seniores"
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/miguel_santos.jpg"
   },
   {
     "id": 6,
     "nome": "Paulo Santana",
     "posicao": "Guarda-Redes",
     "numero": 1,
-    "escalao": "seniores"
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/paulo_santana.jpg"
   },
   {
     "id": 7,
     "nome": "Leandro Abreu",
     "posicao": "Extremo",
     "numero": 11,
-    "escalao": "seniores"
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/leandro_abreu.jpg"
   },
   {
     "id": 8,
     "nome": "Afonso Bonacho",
     "posicao": "Defesa Central",
     "numero": 3,
-    "escalao": "seniores"
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/afonso_bonacho.jpg"
   },
   {
     "id": 9,
     "nome": "João Ferreira",
     "posicao": "Médio Centro",
     "numero": 8,
-    "escalao": "seniores"
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/joao_ferreira.jpg"
   }
 ]

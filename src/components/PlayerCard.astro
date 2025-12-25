@@ -4,19 +4,26 @@ interface Props {
   nome: string;
   posicao: string;
   numero: number;
+  foto?: string | null;
 }
 
-const { nome, posicao, numero } = Astro.props;
+const { nome, posicao, numero, foto } = Astro.props;
+const imagemFinal = foto || '/fotos/jogadores/default_player.jpg';
 ---
-
-<div class="bg-zinc-900 border border-zinc-800 p-4 rounded-lg hover:border-orange-500 transition-all group">
-  <div class="flex justify-between items-start">
-    <div>
-      <h3 class="text-xl font-bold text-white group-hover:text-orange-500">{nome}</h3>
-      <p class="text-zinc-400 text-sm uppercase tracking-wider">{posicao}</p>
+<div class="group bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-orange-500 transition-all duration-300">
+  <div class="aspect-[3/4] w-full relative overflow-hidden bg-zinc-800">
+    <img 
+      src={imagemFinal} 
+      alt={`Foto de ${nome}`}
+      class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter group-hover:grayscale-0"
+    />
+    <div class="absolute bottom-0 right-0 bg-orange-600 text-white font-black text-xl px-3 py-1 rounded-tl-lg">
+      {numero}
     </div>
-    <span class="text-3xl font-black text-orange-500/20 group-hover:text-orange-500/40">
-      #{numero}
-    </span>
+  </div>
+
+  <div class="p-4">
+    <h3 class="text-lg font-bold text-white truncate">{nome}</h3>
+    <p class="text-zinc-400 text-sm uppercase tracking-wider font-medium mt-1">{posicao}</p>
   </div>
 </div>

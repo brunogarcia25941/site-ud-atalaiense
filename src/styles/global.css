@@ -1,13 +1,17 @@
+
+@font-face {
+  font-family: 'ImpactCustom';
+  src: url('/fonts/impact.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "tailwindcss";
 
 @theme {
-  /* Define a fonte Impact como a fonte de destaque (display) */
-  --font-display: "Impact", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  
+  --font-impact: "ImpactWeb", "Impact", sans-serif;
 }
 
-/* Aplica automaticamente a todos os títulos */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
+

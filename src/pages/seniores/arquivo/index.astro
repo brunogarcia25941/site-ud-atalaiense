@@ -11,19 +11,20 @@ const epocasDisponiveis = [...new Set(jogadoresData
 
 <Layout title="Arquivo de Séniores">
   <section class="max-w-7xl mx-auto px-4 py-12">
-    <h1 class="text-5xl font-display italic mb-12 uppercase text-center md:text-left">
+    <h1 class="text-4xl font-black mb-12">
       Arquivo de Séniores
     </h1>
     
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {epocasDisponiveis.map(epoca => (
         <a href={`/seniores/arquivo/${epoca}`} class="group">
-          <div class="bg-zinc-900 border border-zinc-800 p-10 rounded-2xl group-hover:border-orange-500 transition-all text-center">
-            <h2 class="text-4xl font-display italic group-hover:text-orange-500 transition-colors">
+          <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl group-hover:border-orange-500 transition-all text-center">
+            <h2 class="text-3xl font-bold uppercase italic group-hover:text-orange-500 transition-colors">
               {epoca.replace('-', '/')}
             </h2>
-            <p class="text-zinc-500 mt-2 uppercase tracking-widest text-xs">Ver Plantel Histórico</p>
+            <p class="text-zinc-500 mt-2">Ver Plantel Completo</p>
           </div>
+          
         </a>
       ))}
       

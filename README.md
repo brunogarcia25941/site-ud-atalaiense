@@ -44,7 +44,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 
 
-A melhorar:
-Meter tipo de letra impact no titulo
-meter um dropdown nos seniores para as varias equipas seniores ao longo do ano
-meter o logo no fundo meio "sumido" em grande e mais para o lado direito da pagina inicial
+

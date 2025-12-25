@@ -5,7 +5,8 @@
     "posicao": "Médio Centro",
     "numero": 15,
     "escalao": "seniores",
-    "foto": "/fotos/jogadores/seniores/joao_silva.jpg"
+    "foto": "/fotos/jogadores/seniores/joao_silva.jpg",
+    "epoca": "2025-2026"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "posicao": "Extremo",
     "numero": 7,
     "escalao": "seniores",
-    "foto": "/fotos/jogadores/seniores/alexandre_rodrigues.jpg"
+    "foto": "/fotos/jogadores/seniores/alexandre_rodrigues.jpg",
+    "epoca": "2025-2026"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "posicao": "Defesa Central",
     "numero": 17,
     "escalao": "seniores",
-    "foto": "/fotos/jogadores/seniores/rodrigo_dias.jpg"
+    "foto": "/fotos/jogadores/seniores/rodrigo_dias.jpg",
+    "epoca": "2025-2026"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "posicao": "Trinco",
     "numero": 4,
     "escalao": "seniores",
-    "foto": "/fotos/jogadores/seniores/luis_garcia.jpg"
+    "foto": "/fotos/jogadores/seniores/luis_garcia.jpg",
+    "epoca": "2025-2026"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "posicao": "Avançado",
     "numero": 19,
     "escalao": "seniores",
-    "foto": "/fotos/jogadores/seniores/miguel_santos.jpg"
+    "foto": "/fotos/jogadores/seniores/miguel_santos.jpg",
+    "epoca": "2025-2026"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "posicao": "Guarda-Redes",
     "numero": 1,
     "escalao": "seniores",
-    "foto": "/fotos/jogadores/seniores/paulo_santana.jpg"
+    "foto": "/fotos/jogadores/seniores/paulo_santana.jpg",
+    "epoca": "2025-2026"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "posicao": "Extremo",
     "numero": 11,
     "escalao": "seniores",
-    "foto": "/fotos/jogadores/seniores/leandro_abreu.jpg"
+    "foto": "/fotos/jogadores/seniores/leandro_abreu.jpg",
+    "epoca": "2025-2026"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "posicao": "Defesa Central",
     "numero": 3,
     "escalao": "seniores",
-    "foto": "/fotos/jogadores/seniores/afonso_bonacho.jpg"
+    "foto": "/fotos/jogadores/seniores/afonso_bonacho.jpg",
+    "epoca": "2025-2026"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "posicao": "Médio Centro",
     "numero": 8,
     "escalao": "seniores",
-    "foto": "/fotos/jogadores/seniores/joao_ferreira.jpg"
+    "foto": "/fotos/jogadores/seniores/joao_ferreira.jpg",
+    "epoca": "2025-2026"
   },
   {
   "id": 10,
@@ -77,7 +86,8 @@
   "posicao": "Avançado",
   "numero": 9,
   "escalao": "juniores",
-  "foto": null
+  "foto": "/fotos/jogadores/formacao/sergio_sales.jpg",
+  "epoca": "2025-2026"
   },
   {
   "id": 11,
@@ -85,6 +95,16 @@
   "posicao": "Medio Centro",
   "numero": 11,
   "escalao": "juvenis",
-  "foto": null
+  "foto": "/fotos/jogadores/formacao/pedro_jesus.jpg",
+  "epoca": "2025-2026"
+  },
+  {
+    "id": 12,
+    "nome": "João Silva",
+    "posicao": "Médio Centro",
+    "numero": 15,
+    "escalao": "seniores",
+    "foto": "/fotos/jogadores/seniores/joao_silva.jpg",
+    "epoca": "2024-2025"
   }
 ]

@@ -13,36 +13,38 @@ interface Resultado {
   golosFora: number | null;
   data: string;
   competicao: string;
-  status: 'terminado' | 'agendado'; 
+  status: 'terminado' | 'agendado';
 }
 
-// Fazemos o "type casting" (as Resultado[]) para que o TS valide os dados
 const resultados = resultadosData as Resultado[];
-
-// Pegamos apenas os últimos 3 de cada para a home usando a variável tipada
 const ultimasNoticias = noticiasData.slice(0, 3);
 const proximosJogos = resultados.filter(r => r.status === 'agendado').slice(0, 2);
 const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice(0, 2);
 ---
 
 <Layout title="Bem-vindo">
-  <section class="relative min-h-[80vh] flex items-center overflow-hidden">
-    <div class="absolute -bottom-0 -right-20 opacity-30 pointer-events-none select-none z-0">
-      <img src="/logo.png" alt="" class="w-[500px] md:w-[800px] grayscale brightness-80" />
+  <section class="relative py-12 md:py-20 ">
+    <div class="absolute -bottom-10 -right-20 opacity-20 pointer-events-none select-none z-0">
+      <img 
+        src="/logo.png" 
+        alt="" 
+        class="w-[400px] md:w-[700px] grayscale brightness-80"
+      />
     </div>
+
     <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-      <h1 class="text-6xl md:text-8xl font-impact uppercase font-normal leading-none text-white">
-        União Desportiva <br/> Atalaiense
+      <h1 class="text-3xl md:text-6xl font-impact uppercase font-normal leading-tight text-white">
+        União Desportiva <br/>
+        <span class="text-5xl md:text-8xl">Atalaiense</span>
       </h1>
-      <p class="mt-6 text-xl text-zinc-400 max-w-xl">
+      <p class="mt-4 text-lg md:text-xl text-zinc-400 max-w-xl">
         Desde 1964, a honrar as cores da Atalaia no campo e na formação de jovens atletas.
       </p>
     </div>
   </section>
 
-  <section class="max-w-7xl mx-auto px-4 py-20 relative z-10">
+  <section class="max-w-7xl mx-auto px-4  relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-      
       <div class="lg:col-span-2">
         <h2 class="text-3xl font-impact uppercase mb-8 italic">Últimas <span class="text-orange-500">Notícias</span></h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -52,28 +54,19 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
         </div>
       </div>
 
-      <div>
-        <h2 class="text-3xl font-impact uppercase mb-8 italic">Últimos <span class="text-orange-500">Resultados</span></h2>
-        
-        <div class="space-y-8">
-          <div>
-            <p class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Próximo Jogo</p>
-            {proximosJogos.map(jogo => (
-              <ResultCard {...jogo} />
-            ))}
-          </div>
-
-          <div>
-            <p class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Últimos Resultados</p>
-            <div class="space-y-4">
-              {ultimosResultados.map(resultado => (
-                <ResultCard {...resultado} />
-              ))}
-            </div>
+      <div class="space-y-8">
+        <h2 class="text-3xl font-impact uppercase mb-8 italic">Match <span class="text-orange-500">Center</span></h2>
+        <div>
+          <p class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Próximo Jogo</p>
+          {proximosJogos.map(jogo => <ResultCard {...jogo} />)}
+        </div>
+        <div>
+          <p class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Últimos Resultados</p>
+          <div class="space-y-4">
+            {ultimosResultados.map(resultado => <ResultCard {...resultado} />)}
           </div>
         </div>
       </div>
-
     </div>
   </section>
 </Layout>

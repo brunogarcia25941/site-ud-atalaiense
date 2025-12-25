@@ -1,0 +1,36 @@
+---
+// src/layouts/Layout.astro
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+<!doctype html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Site Oficial da União Desportiva Atalaiense" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title} | UDA</title>
+	</head>
+	<body class="bg-black text-white min-h-screen flex flex-col">
+		<Navbar />
+		<main class="flex-grow">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	/* Customizações globais se precisares */
+	:root {
+		--brand-orange: #f97316; /* Laranja Tailwind 500 */
+	}
+</style>

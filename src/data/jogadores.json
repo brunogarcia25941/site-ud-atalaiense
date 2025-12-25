@@ -4,7 +4,7 @@
     "nome": "João Silva",
     "posicao": "Médio Centro",
     "numero": 15,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/joao_silva.jpg",
     "epoca": "2025-2026"
   },
@@ -13,7 +13,7 @@
     "nome": "Alexandre Rodrigues",
     "posicao": "Extremo",
     "numero": 7,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/alexandre_rodrigues.jpg",
     "epoca": "2025-2026"
   },
@@ -22,7 +22,7 @@
     "nome": "Rodrigo Dias",
     "posicao": "Defesa Central",
     "numero": 17,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/rodrigo_dias.jpg",
     "epoca": "2025-2026"
   },
@@ -31,7 +31,7 @@
     "nome": "Luís Garcia",
     "posicao": "Trinco",
     "numero": 4,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/luis_garcia.jpg",
     "epoca": "2025-2026"
   },
@@ -40,7 +40,7 @@
     "nome": "Miguel Santos",
     "posicao": "Avançado",
     "numero": 19,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/miguel_santos.jpg",
     "epoca": "2025-2026"
   },
@@ -49,7 +49,7 @@
     "nome": "Paulo Santana",
     "posicao": "Guarda-Redes",
     "numero": 1,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/paulo_santana.jpg",
     "epoca": "2025-2026"
   },
@@ -58,7 +58,7 @@
     "nome": "Leandro Abreu",
     "posicao": "Extremo",
     "numero": 11,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/leandro_abreu.jpg",
     "epoca": "2025-2026"
   },
@@ -67,7 +67,7 @@
     "nome": "Afonso Bonacho",
     "posicao": "Defesa Central",
     "numero": 3,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/afonso_bonacho.jpg",
     "epoca": "2025-2026"
   },
@@ -76,7 +76,7 @@
     "nome": "João Ferreira",
     "posicao": "Médio Centro",
     "numero": 8,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/joao_ferreira.jpg",
     "epoca": "2025-2026"
   },
@@ -85,7 +85,7 @@
   "nome": "Sergio Sales",
   "posicao": "Avançado",
   "numero": 9,
-  "escalao": "juniores",
+  "escalao": "Juniores",
   "foto": "/fotos/jogadores/formacao/sergio_sales.jpg",
   "epoca": "2025-2026"
   },
@@ -94,7 +94,7 @@
   "nome": "Pedro Jesus",
   "posicao": "Medio Centro",
   "numero": 11,
-  "escalao": "juvenis",
+  "escalao": "Juvenis",
   "foto": "/fotos/jogadores/formacao/pedro_jesus.jpg",
   "epoca": "2025-2026"
   },
@@ -103,7 +103,7 @@
     "nome": "João Silva",
     "posicao": "Médio Centro",
     "numero": 15,
-    "escalao": "seniores",
+    "escalao": "Séniores",
     "foto": "/fotos/jogadores/seniores/joao_silva.jpg",
     "epoca": "2024-2025"
   }

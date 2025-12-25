@@ -5,14 +5,14 @@ import jogadoresData from '../../data/jogadores.json';
 
 // Obtemos a lista de escalões de formação únicos
 const escaloes = [...new Set(jogadoresData
-    .filter(j => j.escalao !== 'seniores')
+    .filter(j => j.escalao !== 'Séniores')
     .map(j => j.escalao))
 ];
 ---
 
 <Layout title="Formação">
   <section class="max-w-7xl mx-auto px-4 py-12">
-    <h1 class="text-4xl font-black mb-12">Escalões de Formação</h1>
+    <h1 class="text-4xl font-black mb-12">Escalões de <span class="text-orange-500">Formação</span></h1>
     
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {escaloes.map(escalao => (
@@ -21,7 +21,6 @@ const escaloes = [...new Set(jogadoresData
             <h2 class="text-3xl font-bold uppercase italic group-hover:text-orange-500 transition-colors">
                 {escalao.replace('sub', 'Sub-')}
             </h2>
-            <p class="text-zinc-500 mt-2">Ver Plantel Completo</p>
           </div>
         </a>
       ))}

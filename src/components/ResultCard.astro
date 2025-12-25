@@ -1,0 +1,31 @@
+---
+interface Props {
+  equipaCasa: string;
+  equipaFora: string;
+  golosCasa: number | null;
+  golosFora: number | null;
+  data: string;
+  competicao: string;
+  status: 'terminado' | 'agendado';
+}
+
+const { equipaCasa, equipaFora, golosCasa, golosFora, data, competicao, status } = Astro.props;
+---
+<div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl">
+  <p class="text-[10px] text-zinc-500 uppercase tracking-widest mb-4 text-center">{competicao} • {new Date(data).toLocaleDateString('pt-PT')}</p>
+  <div class="flex items-center justify-between gap-4">
+    <div class="flex-1 text-center">
+      <p class="text-sm font-bold text-white uppercase">{equipaCasa}</p>
+    </div>
+    <div class="flex items-center gap-2">
+      {status === 'terminado' ? (
+        <span class="text-2xl font-impact text-orange-500">{golosCasa} - {golosFora}</span>
+      ) : (
+        <span class="text-xs bg-zinc-800 px-3 py-1 rounded-full text-zinc-400 uppercase font-bold">VS</span>
+      )}
+    </div>
+    <div class="flex-1 text-center">
+      <p class="text-sm font-bold text-white uppercase">{equipaFora}</p>
+    </div>
+  </div>
+</div>

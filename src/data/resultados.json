@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "equipaCasa": "Caxarias",
+    "equipaFora": "Atalaiense",
+    "golosCasa": 1,
+    "golosFora": 1,
+    "data": "2025-12-21",
+    "competicao": "Campeonato Distrital",
+    "status": "terminado"
+  },
+  {
+    "id": 2,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "Espinheirense",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-01-11",
+    "competicao": "Campeonato Distrital",
+    "status": "agendado"
+  }
+]

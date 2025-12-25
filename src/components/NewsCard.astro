@@ -1,0 +1,21 @@
+---
+interface Props {
+  titulo: string;
+  data: string;
+  resumo: string;
+  imagem: string;
+}
+
+const { titulo, data, resumo, imagem } = Astro.props;
+---
+<div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-orange-500 transition-all group">
+  <div class="aspect-video bg-zinc-800 overflow-hidden">
+    <img src={imagem} alt={titulo} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+  </div>
+  <div class="p-6">
+    <span class="text-orange-500 text-xs font-bold uppercase tracking-widest">{new Date(data).toLocaleDateString('pt-PT')}</span>
+    <h3 class="text-xl font-bold mt-2 text-white">{titulo}</h3>
+    <p class="text-zinc-400 text-sm mt-3 line-clamp-2">{resumo}</p>
+    <button class="mt-4 text-orange-500 text-sm font-bold hover:underline">Ler mais →</button>
+  </div>
+</div>

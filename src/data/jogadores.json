@@ -70,5 +70,21 @@
     "numero": 8,
     "escalao": "seniores",
     "foto": "/fotos/jogadores/seniores/joao_ferreira.jpg"
+  },
+  {
+  "id": 10,
+  "nome": "Sergio Sales",
+  "posicao": "Avançado",
+  "numero": 9,
+  "escalao": "juniores",
+  "foto": null
+  },
+  {
+  "id": 11,
+  "nome": "Pedro Jesus",
+  "posicao": "Medio Centro",
+  "numero": 11,
+  "escalao": "juvenis",
+  "foto": null
   }
 ]

@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="O Clube">
+  <section class="max-w-7xl mx-auto px-4 py-12 md:py-20">
+    <header class="mb-16 border-l-4 border-orange-500 pl-6">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 italic">O <span class="text-orange-500">Clube</span></h1>
+      <p class="text-zinc-400 text-lg max-w-2xl">
+        Conheça a história, os valores e as conquistas da União Desportiva Atalaiense.
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div class="lg:col-span-2 space-y-8">
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6 underline decoration-orange-500 underline-offset-8">A Nossa História</h2>
+          <div class="prose prose-zinc prose-invert max-w-none text-zinc-400 leading-relaxed space-y-4">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Fundada em [ANO], a União Desportiva Atalaiense tem sido um pilar na comunidade de Atalaia. Ao longo das décadas, o clube cresceu não só em termos de infraestruturas, mas também no seu papel social e desportivo na região.
+            </p>
+          </div>
+        </section>
+
+        <section >
+          <h2 class="text-2xl font-bold text-white mb-6 underline decoration-orange-500 underline-offset-8">Missão e Valores</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl">
+              <h3 class="text-orange-500 font-bold mb-2">Formação</h3>
+              <p class="text-sm text-zinc-400">Desenvolver jovens atletas não só no aspeto técnico, mas também nos valores éticos e desportivos.</p>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl">
+              <h3 class="text-orange-500 font-bold mb-2">Comunidade</h3>
+              <p class="text-sm text-zinc-400">Ser um ponto de união para a freguesia e promover hábitos de vida saudáveis através do futebol.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="space-y-12">
+        <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl">
+          <h2 class="text-xl font-bold text-white mb-6 uppercase tracking-wider">Palmarés</h2>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <span class="text-2xl">🏆</span>
+              <div>
+                <p class="font-bold text-white">Campeonato Distrital</p>
+                <p class="text-xs text-zinc-500 uppercase">Época 20XX/XX</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-2xl">🏆</span>
+              <div>
+                <p class="font-bold text-white">Taça do Ribatejo</p>
+                <p class="text-xs text-zinc-500 uppercase">Época 20XX/XX</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-2xl">🥇</span>
+              <div>
+                <p class="font-bold text-white">Torneio de Abertura</p>
+                <p class="text-xs text-zinc-500 uppercase">Época 20XX/XX</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Layout>
+

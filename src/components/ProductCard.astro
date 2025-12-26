@@ -1,0 +1,31 @@
+---
+// src/components/ProductCard.astro
+interface Props {
+  nome: string;
+  preco: string;
+  descricao: string;
+  imagem: string;
+}
+
+const { nome, preco, descricao, imagem } = Astro.props;
+---
+<div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden group hover:border-orange-500 transition-all flex flex-col h-full">
+  <div class="aspect-square bg-zinc-800 overflow-hidden shrink-0">
+    <img src={imagem} alt={nome} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+  </div>
+  
+  <div class="p-6 flex flex-col flex-1">
+    <div class="flex justify-between items-start mb-2">
+      <h3 class="text-xl font-bold text-white">{nome}</h3>
+      <span class="text-orange-500 font-bold shrink-0 ml-4">{preco}</span>
+    </div>
+    <p class="text-zinc-400 text-sm mb-6">{descricao}</p>
+    
+    <button 
+      class="order-btn w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 rounded-xl transition-all mt-auto"
+      data-produto={nome}
+    >
+      Encomendar
+    </button>
+  </div>
+</div>

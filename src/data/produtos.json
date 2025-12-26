@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nome": "Equipamento Principal 2025/26",
+    "preco": "35,00€",
+    "descricao": "Camisola oficial da UD Atalaiense. Disponível em todos os tamanhos.",
+    "imagem": "/fotos/loja/default_player.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Cachecol do Clube",
+    "preco": "10,00€",
+    "descricao": "Cachecol clássico 'Força Atalaiense'. 100% acrílico.",
+    "imagem": "/fotos/loja/default_player.jpg"
+  }
+]

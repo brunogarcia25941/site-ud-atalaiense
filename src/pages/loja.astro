@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import produtosData from '../data/produtos.json';
+---
+
+<Layout title="Loja Oficial">
+  <section class="max-w-7xl mx-auto px-4 py-12 md:py-20">
+    <header class="mb-16">
+      <h1 class="text-5xl md:text-7xl font-impact italic text-orange-500 uppercase">Loja <span class="text-white text-4xl md:text-6xl block md:inline md:ml-4">Oficial</span></h1>
+      <p class="text-zinc-400 mt-4 text-lg">Apoia o teu clube com o merchandising oficial da UD Atalaiense.</p>
+    </header>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {produtosData.map(produto => (
+        <ProductCard {...produto} />
+      ))}
+    </div>
+  </section>
+
+  <div id="order-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+    <div id="modal-overlay" class="absolute inset-0 bg-black/90 backdrop-blur-sm"></div>
+    
+    <div class="relative bg-zinc-900 border border-zinc-800 w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl p-8">
+      <button id="close-modal" class="absolute top-4 right-4 text-zinc-500 hover:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="2"/></svg>
+      </button>
+
+      <h2 class="text-2xl font-bold text-white mb-2">Pedir Encomenda</h2>
+      <p id="product-name-display" class="text-orange-500 font-bold mb-6 text-sm"></p>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-zinc-500 text-sm mb-1">O teu email</label>
+          <input type="email" id="user-email" class="w-full bg-black border border-zinc-800 rounded-xl px-4 py-3 text-white focus:border-orange-500 outline-none" placeholder="exemplo@mail.com" />
+        </div>
+        <div>
+          <label class="block text-zinc-500 text-sm mb-1">Mensagem/Detalhes (Tamanho, quantidade...)</label>
+          <textarea id="user-message" rows="4" class="w-full bg-black border border-zinc-800 rounded-xl px-4 py-3 text-white focus:border-orange-500 outline-none" placeholder="Escreve aqui os detalhes..."></textarea>
+        </div>
+        <button type="button" class="w-full bg-orange-600 py-4 rounded-xl font-bold hover:bg-orange-500 transition-all">Enviar Pedido</button>
+      </form>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const modal = document.getElementById('order-modal');
+  const overlay = document.getElementById('modal-overlay');
+  const closeBtn = document.getElementById('close-modal');
+  const orderBtns = document.querySelectorAll('.order-btn');
+  const pNameDisplay = document.getElementById('product-name-display');
+  
+  // Elementos do Form
+  const emailInput = document.getElementById('user-email') as HTMLInputElement;
+  const messageInput = document.getElementById('user-message') as HTMLTextAreaElement;
+
+  // 1. Carregar rascunho guardado (Persistência)
+  window.addEventListener('DOMContentLoaded', () => {
+    if (emailInput) emailInput.value = localStorage.getItem('order_draft_email') || '';
+    if (messageInput) messageInput.value = localStorage.getItem('order_draft_message') || '';
+  });
+
+  // 2. Guardar enquanto escreve
+  emailInput?.addEventListener('input', (e) => {
+    localStorage.setItem('order_draft_email', (e.target as HTMLInputElement).value);
+  });
+  messageInput?.addEventListener('input', (e) => {
+    localStorage.setItem('order_draft_message', (e.target as HTMLTextAreaElement).value);
+  });
+
+  orderBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const produto = (btn as HTMLElement).dataset.produto;
+      if (pNameDisplay) pNameDisplay.innerText = `Produto selecionado: ${produto}`;
+      modal?.classList.remove('hidden');
+      modal?.classList.add('flex');
+    });
+  });
+
+  const closeModal = () => {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+  };
+
+  closeBtn?.addEventListener('click', closeModal);
+  overlay?.addEventListener('click', closeModal);
+</script>

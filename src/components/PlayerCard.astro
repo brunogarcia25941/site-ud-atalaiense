@@ -2,13 +2,16 @@
 // src/components/PlayerCard.astro
 interface Props {
   nome: string;
-  posicao: string;
   numero: number;
   foto?: string | null;
 }
 
-const { nome, posicao, numero, foto } = Astro.props;
+const { nome, numero, foto } = Astro.props;
 const imagemFinal = foto || '/fotos/jogadores/default_player.jpg';
+
+const partesNome = nome.split(' ');
+const primeiroNome = partesNome[0];
+const restoNome = partesNome.slice(1).join(' ');
 ---
 <div class="group bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-orange-500 transition-all duration-300">
   <div class="aspect-[3/4] w-full relative overflow-hidden bg-zinc-800">
@@ -22,8 +25,10 @@ const imagemFinal = foto || '/fotos/jogadores/default_player.jpg';
     </div>
   </div>
 
-  <div class="p-4">
-    <h3 class="text-lg font-bold text-white truncate">{nome}</h3>
-    <p class="text-zinc-400 text-sm uppercase tracking-wider font-medium mt-1">{posicao}</p>
+  <div class="p-2">
+    <h3 class="text-lg font-bold text-white leading-tight">
+      <span class="block">{primeiroNome}</span>
+      {restoNome && <span class="block text-sm text-zinc-400 font-medium truncate">{restoNome}</span>}
+    </h3>
   </div>
 </div>

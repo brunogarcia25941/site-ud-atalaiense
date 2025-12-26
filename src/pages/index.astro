@@ -23,12 +23,13 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
 ---
 
 <Layout title="Bem-vindo">
-  <section class="relative py-12 md:py-20 ">
-    <div class="absolute -bottom-10 -right-20 opacity-20 pointer-events-none select-none z-0">
+  
+  <section class="relative py-12 md:py-20 overflow-hidden">
+    <div class="absolute -bottom-1 -right-20 opacity-20 pointer-events-none select-none z-0  ">
       <img 
         src="/logo.png" 
         alt="" 
-        class="w-[400px] md:w-[700px] grayscale brightness-80"
+        class="w-[400px] md:w-[650px] grayscale brightness-80"
       />
     </div>
 
@@ -55,7 +56,7 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
       </div>
 
       <div class="space-y-8">
-        <h2 class="text-3xl font-impact uppercase mb-8 italic">Match <span class="text-orange-500">Center</span></h2>
+        <h2 class="text-3xl font-impact uppercase mb-8 italic underline decoration-orange-500 underline-offset-8">Resultados</h2>
         <div>
           <p class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Próximo Jogo</p>
           {proximosJogos.map(jogo => <ResultCard {...jogo} />)}
@@ -69,4 +70,75 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
       </div>
     </div>
   </section>
+  
 </Layout>
+<div id="news-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+  <div id="modal-overlay" class="absolute inset-0 bg-black/90 backdrop-blur-sm"></div>
+  
+  <div class="relative bg-zinc-900 border border-zinc-800 w-full max-w-2xl max-h-[90vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl">
+    <button id="modal-close" class="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-orange-600 transition-colors">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+
+    <div class="overflow-y-auto custom-scrollbar">
+      <img id="modal-img" src="" alt="" class="w-full aspect-video object-cover border-b border-zinc-800" />
+      <div class="p-8">
+        <span id="modal-date" class="text-orange-500 text-xs font-bold uppercase tracking-widest"></span>
+        <h2 id="modal-title" class="text-3xl font-bold mt-2 text-white"></h2>
+        <div id="modal-text" class="py-5 text-zinc-300 leading-relaxed whitespace-pre-line text-lg">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('news-modal');
+  const overlay = document.getElementById('modal-overlay');
+  const closeBtn = document.getElementById('modal-close');
+  const openBtns = document.querySelectorAll('.news-open-btn');
+
+  // Elementos internos do modal
+  const mTitle = document.getElementById('modal-title');
+  const mDate = document.getElementById('modal-date');
+  const mText = document.getElementById('modal-text');
+  const mImg = document.getElementById('modal-img') as HTMLImageElement;
+
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const { titulo, data, resumo, imagem } = (btn as HTMLElement).dataset;
+      
+      if (mTitle) mTitle.innerText = titulo || '';
+      if (mDate) mDate.innerText = data || '';
+      if (mText) mText.innerText = resumo || '';
+      if (mImg) mImg.src = imagem || '';
+
+      modal?.classList.remove('hidden');
+      modal?.classList.add('flex');
+      document.body.style.overflow = 'hidden'; // Impede o scroll da página atrás
+    });
+  });
+
+  const closeModal = () => {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+    document.body.style.overflow = 'auto';
+  };
+
+  closeBtn?.addEventListener('click', closeModal);
+  overlay?.addEventListener('click', closeModal);
+</script>
+
+<style>
+  /* Customização do scroll para o modal */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #18181b;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #f97316;
+    border-radius: 10px;
+  }
+</style>

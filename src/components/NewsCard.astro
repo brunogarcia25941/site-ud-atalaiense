@@ -16,6 +16,14 @@ const { titulo, data, resumo, imagem } = Astro.props;
     <span class="text-orange-500 text-xs font-bold uppercase tracking-widest">{new Date(data).toLocaleDateString('pt-PT')}</span>
     <h3 class="text-xl font-bold mt-2 text-white">{titulo}</h3>
     <p class="text-zinc-400 text-sm mt-3 line-clamp-2">{resumo}</p>
-    <button class="mt-4 text-orange-500 text-sm font-bold hover:underline">Ler mais →</button>
+    <button 
+      class="news-open-btn mt-4 text-orange-500 text-sm font-bold hover:underline"
+      data-titulo={titulo}
+      data-data={new Date(data).toLocaleDateString('pt-PT')}
+      data-resumo={resumo}
+      data-imagem={imagem}
+    >
+      Ler mais →
+    </button>
   </div>
 </div>

@@ -67,6 +67,11 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
             {ultimosResultados.map(resultado => <ResultCard {...resultado} />)}
           </div>
         </div>
+        <div class="mt-8">
+          <a href="/calendario" class="block w-full text-center border border-zinc-800 hover:border-orange-500 py-3 rounded-xl text-sm font-bold transition-all text-zinc-400 hover:text-white">
+            Ver Calendário Completo →
+          </a>
+        </div>
       </div>
     </div>
   </section>

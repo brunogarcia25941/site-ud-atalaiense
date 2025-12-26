@@ -16,6 +16,9 @@ const epocas = [...new Set(jogadoresData
 <Layout title={`Arquivo ${escalao}`}>
   <section class="max-w-7xl mx-auto px-4 py-12">
     <h1 class="text-4xl font-black mb-12">{escalao}</h1>
+    <div class="mt-8 mb-8">
+      <a href="/formacao" class="text-orange-500 hover:underline">← Voltar a Formação</a>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       {epocas.map(epoca => (
         <a href={`/formacao/${escalao}/${epoca}`} class="group">

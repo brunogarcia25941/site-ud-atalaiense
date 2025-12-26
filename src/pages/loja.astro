@@ -7,11 +7,13 @@ import produtosData from '../data/produtos.json';
 <Layout title="Loja Oficial">
   <section class="max-w-7xl mx-auto px-4 py-12 md:py-20">
     <header class="mb-16">
-      <h1 class="text-5xl md:text-7xl font-impact italic text-orange-500 uppercase">Loja <span class="text-white text-4xl md:text-6xl block md:inline md:ml-4">Oficial</span></h1>
+      <h1 class="text-5xl md:text-7xl font-impact italic text-orange-500 uppercase">
+        Loja <span class="text-white text-4xl md:text-6xl block md:inline md:ml-4">Oficial</span>
+      </h1>
       <p class="text-zinc-400 mt-4 text-lg">Apoia o teu clube com o merchandising oficial da UD Atalaiense.</p>
     </header>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
       {produtosData.map(produto => (
         <ProductCard {...produto} />
       ))}
@@ -23,66 +25,131 @@ import produtosData from '../data/produtos.json';
     
     <div class="relative bg-zinc-900 border border-zinc-800 w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl p-8">
       <button id="close-modal" class="absolute top-4 right-4 text-zinc-500 hover:text-white">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="2"/></svg>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M6 18L18 6M6 6l12 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </button>
 
       <h2 class="text-2xl font-bold text-white mb-2">Pedir Encomenda</h2>
-      <p id="product-name-display" class="text-orange-500 font-bold mb-6 text-sm"></p>
+      <p id="product-name-display" class="text-orange-500 font-bold mb-6 text-sm italic"></p>
 
-      <form class="space-y-4">
+      <form 
+        action="https://formspree.io/f/xnjqnnkp" 
+        method="POST" 
+        class="space-y-4"
+      >
+        <input type="hidden" name="produto_selecionado" id="hidden-product-input" />
+
         <div>
           <label class="block text-zinc-500 text-sm mb-1">O teu email</label>
-          <input type="email" id="user-email" class="w-full bg-black border border-zinc-800 rounded-xl px-4 py-3 text-white focus:border-orange-500 outline-none" placeholder="exemplo@mail.com" />
+          <input 
+            type="email" 
+            name="email_cliente" 
+            id="user-email" 
+            required 
+            class="w-full bg-black border border-zinc-800 rounded-xl px-4 py-3 text-white focus:border-orange-500 outline-none transition-colors" 
+            placeholder="exemplo@mail.com" 
+          />
         </div>
         <div>
           <label class="block text-zinc-500 text-sm mb-1">Mensagem/Detalhes (Tamanho, quantidade...)</label>
-          <textarea id="user-message" rows="4" class="w-full bg-black border border-zinc-800 rounded-xl px-4 py-3 text-white focus:border-orange-500 outline-none" placeholder="Escreve aqui os detalhes..."></textarea>
+          <textarea 
+            name="mensagem" 
+            id="user-message" 
+            rows="4" 
+            class="w-full bg-black border border-zinc-800 rounded-xl px-4 py-3 text-white focus:border-orange-500 outline-none transition-colors" 
+            placeholder="Escreve aqui os detalhes..."></textarea>
         </div>
-        <button type="button" class="w-full bg-orange-600 py-4 rounded-xl font-bold hover:bg-orange-500 transition-all">Enviar Pedido</button>
+        
+        <button type="submit" class="w-full bg-orange-600 py-4 rounded-xl font-bold hover:bg-orange-500 transition-all text-white">
+          Enviar Pedido por E-mail
+        </button>
       </form>
+    </div>
+  </div>
+  <div id="success-modal" class="fixed inset-0 z-[110] hidden items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black/90 backdrop-blur-sm"></div>
+    <div class="relative bg-zinc-900 border border-orange-500 p-8 rounded-2xl max-w-sm w-full text-center shadow-2xl animate-fade-in">
+      <div class="w-16 h-16 bg-orange-600/20 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h2 class="text-2xl font-bold text-white mb-2 italic uppercase">Pedido Enviado!</h2>
+      <p class="text-zinc-400 mb-6 text-sm">Obrigado. O clube entrará em contacto contigo em breve para finalizar a encomenda.</p>
+      <button id="close-success" class="w-full bg-orange-600 py-3 rounded-xl font-bold hover:bg-orange-500 transition-all text-white">Fechar</button>
     </div>
   </div>
 </Layout>
 
 <script>
   const modal = document.getElementById('order-modal');
-  const overlay = document.getElementById('modal-overlay');
-  const closeBtn = document.getElementById('close-modal');
+  const successModal = document.getElementById('success-modal');
+  const form = document.querySelector('form');
   const orderBtns = document.querySelectorAll('.order-btn');
   const pNameDisplay = document.getElementById('product-name-display');
-  
-  // Elementos do Form
+  const hiddenInput = document.getElementById('hidden-product-input') as HTMLInputElement;
+
   const emailInput = document.getElementById('user-email') as HTMLInputElement;
   const messageInput = document.getElementById('user-message') as HTMLTextAreaElement;
 
-  // 1. Carregar rascunho guardado (Persistência)
+  // 1. Carregar rascunho (Persistência)
   window.addEventListener('DOMContentLoaded', () => {
-    if (emailInput) emailInput.value = localStorage.getItem('order_draft_email') || '';
-    if (messageInput) messageInput.value = localStorage.getItem('order_draft_message') || '';
+    emailInput.value = localStorage.getItem('order_draft_email') || '';
+    messageInput.value = localStorage.getItem('order_draft_message') || '';
   });
 
-  // 2. Guardar enquanto escreve
-  emailInput?.addEventListener('input', (e) => {
-    localStorage.setItem('order_draft_email', (e.target as HTMLInputElement).value);
-  });
-  messageInput?.addEventListener('input', (e) => {
-    localStorage.setItem('order_draft_message', (e.target as HTMLTextAreaElement).value);
-  });
+  // 2. Guardar rascunho (Persistência)
+  emailInput?.addEventListener('input', () => localStorage.setItem('order_draft_email', emailInput.value));
+  messageInput?.addEventListener('input', () => localStorage.setItem('order_draft_message', messageInput.value));
 
+  // 3. Abrir Modal de Encomenda
   orderBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const produto = (btn as HTMLElement).dataset.produto;
-      if (pNameDisplay) pNameDisplay.innerText = `Produto selecionado: ${produto}`;
-      modal?.classList.remove('hidden');
-      modal?.classList.add('flex');
+      if (pNameDisplay) pNameDisplay.innerText = `Produto: ${produto}`;
+      if (hiddenInput) hiddenInput.value = produto || '';
+      modal?.classList.replace('hidden', 'flex');
+      document.body.style.overflow = 'hidden';
     });
   });
 
-  const closeModal = () => {
-    modal?.classList.add('hidden');
-    modal?.classList.remove('flex');
+  // 4. ENVIO AJAX (Evita o redirecionamento)
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault(); // Bloqueia o redirecionamento do Formspree
+    
+    const formData = new FormData(form);
+    
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        // Sucesso: Limpar formulário e localStorage
+        form.reset();
+        localStorage.removeItem('order_draft_email');
+        localStorage.removeItem('order_draft_message');
+        
+        // Trocar modais
+        modal?.classList.replace('flex', 'hidden');
+        successModal?.classList.replace('hidden', 'flex');
+      } else {
+        alert('Ocorreu um erro ao enviar. Tenta novamente.');
+      }
+    } catch (error) {
+      alert('Erro de ligação. Verifica a tua internet.');
+    }
+  });
+
+  // 5. Fechar modais
+  const closeAll = () => {
+    modal?.classList.replace('flex', 'hidden');
+    successModal?.classList.replace('flex', 'hidden');
+    document.body.style.overflow = 'auto';
   };
 
-  closeBtn?.addEventListener('click', closeModal);
-  overlay?.addEventListener('click', closeModal);
+  document.getElementById('close-modal')?.addEventListener('click', closeAll);
+  document.getElementById('modal-overlay')?.addEventListener('click', closeAll);
+  document.getElementById('close-success')?.addEventListener('click', closeAll);
 </script>

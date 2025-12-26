@@ -1,0 +1,28 @@
+---
+import parceirosData from '../data/parceiros.json';
+---
+
+<section class="py-12 bg-zinc-950 border-t border-zinc-900/50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="shrink-0">
+        <h2 class="text-lg font-bold  uppercase tracking-[0.3em] italic">
+          Os nossos <span class="text-orange-500">Parceiros</span>
+        </h2>
+      </div>
+      
+      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+        {parceirosData.map(p => (
+          <a href={p.site} target="_blank" title={p.nome} class="group">
+            <img 
+              src={p.logo} 
+              alt={p.nome} 
+              class="h-8 md:h-10 w-auto object-contain opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" 
+            />
+          </a>
+        ))}
+        
+      </div>
+    </div>
+  </div>
+</section>

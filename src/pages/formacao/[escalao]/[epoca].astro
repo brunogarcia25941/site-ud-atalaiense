@@ -26,7 +26,10 @@ const { jogadores } = Astro.props;
       <h1 class="text-4xl font-black uppercase">{escalao}</h1>
       <p class="text-zinc-400">{epoca?.replace('-', '/')}</p>
     </header>
-    <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-5 gap-6">
+    <div class="mt-8 mb-8">
+      <a href={`/formacao/${escalao}`} class="text-orange-500 hover:underline">← Voltar a {escalao}</a>
+    </div>
+    <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-7 gap-6">
       {jogadores.map(j => <PlayerCard {...j} />)}
     </div>
   </section>

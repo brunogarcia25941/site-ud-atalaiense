@@ -1,13 +1,49 @@
 ---
-// src/components/Footer.astro
+const currentYear = new Date().getFullYear();
 ---
-<footer class="bg-zinc-900 border-t border-orange-500/20 py-8 mt-12">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <p class="text-zinc-400 text-sm">
-      &copy; {new Date().getFullYear()} União Desportiva Atalaiense. Todos os direitos reservados.
-    </p>
-    <div class="flex justify-center space-x-6 mt-4">
-      <span class="text-orange-500 font-bold italic">União • Força • Atalaia</span>
+
+<footer class="bg-black text-white py-12 border-t border-zinc-900 mt-20">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-10">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+    <div class="flex items-center gap-10 ">
+      <img 
+        src="/fotos/parceiros/afsantarem.png" 
+        alt="Associação de Futebol de Santarém" 
+        class="h-12 md:h-16 w-auto object-contain" 
+      />
+      <img 
+        src="/fotos/parceiros/fpf.png" 
+        alt="Federação Portuguesa de Futebol" 
+        class="h-12 md:h-16 w-auto object-contain" 
+      />
     </div>
+
+    <div class="flex gap-8">
+      <a 
+        href="https://www.facebook.com/uniaodesportiva.atalaiense?locale=pt_PT" 
+        target="_blank" 
+        class="text-sm font-bold hover:text-orange-500 transition-colors uppercase tracking-widest"
+      >
+        Facebook
+      </a>
+      <a 
+        href="https://www.instagram.com/uniaodesportivaatalaiense3275/" 
+        target="_blank" 
+        class="text-sm font-bold hover:text-orange-500 transition-colors uppercase tracking-widest"
+      >
+        Instagram
+      </a>
+    </div>
+    </div>
+
+    <div class="text-center space-y-2">
+      <p class="text-[10px] md:text-xs uppercase tracking-[0.3em]">
+        &copy; {currentYear} União Desportiva Atalaiense
+      </p>
+      <p class="text-[9px] text-zinc-500 uppercase tracking-widest">
+        Um por Todos e Todos por Um
+      </p>
+    </div>
+
   </div>
 </footer>

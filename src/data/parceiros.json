@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "Abreviatura",
+    "logo": "/fotos/parceiros/abreviatura.png",
+    "site": "#",
+    "categoria": "Oficial"
+  },
+  {
+    "nome": "Baia",
+    "logo": "/fotos/parceiros/baia.png",
+    "site": "#",
+    "categoria": "Oficial"
+  },
+  {
+    "nome": "Manuel Fonseca",
+    "logo": "/fotos/parceiros/manuel_fonseca.png",
+    "site": "#",
+    "categoria": "Oficial"
+  },
+  {
+    "nome": "Tcel",
+    "logo": "/fotos/parceiros/tcel.png",
+    "site": "#",
+    "categoria": "Oficial"
+  },
+  {
+    "nome": "Lasersite",
+    "logo": "/fotos/parceiros/lasersite.png",
+    "site": "#",
+    "categoria": "Oficial"
+  }
+]

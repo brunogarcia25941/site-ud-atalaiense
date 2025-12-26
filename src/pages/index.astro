@@ -4,6 +4,7 @@ import NewsCard from '../components/NewsCard.astro';
 import ResultCard from '../components/ResultCard.astro';
 import noticiasData from '../data/noticias.json';
 import resultadosData from '../data/resultados.json';
+import SponsorsRow from '../components/SponsorsRow.astro';
 
 interface Resultado {
   id: number;
@@ -44,7 +45,7 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
     </div>
   </section>
 
-  <section class="max-w-7xl mx-auto px-4  relative z-10">
+  <section class="max-w-7xl mx-auto px-4  mb-8 relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
       <div class="lg:col-span-2">
         <h2 class="text-3xl font-impact uppercase mb-8 italic">Últimas <span class="text-orange-500">Notícias</span></h2>
@@ -75,6 +76,7 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
       </div>
     </div>
   </section>
+  <SponsorsRow/>
   
 </Layout>
 <div id="news-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">

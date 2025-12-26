@@ -1,0 +1,33 @@
+---
+// src/components/StaffCard.astro
+interface Props {
+  nome: string;
+  cargo: string;
+  foto?: string | null;
+}
+
+const { nome, cargo, foto } = Astro.props;
+const imagemFinal = foto || '/fotos/jogadores/default_player.jpg';
+
+// Mantemos a lógica de separar o nome para manter o estilo visual
+const partesNome = nome.split(' ');
+const primeiroNome = partesNome[0];
+const restoNome = partesNome.slice(1).join(' ');
+---
+<div class="group bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-orange-500 transition-all duration-300">
+  <div class="aspect-[3/4] w-full relative overflow-hidden bg-zinc-800">
+    <img 
+      src={imagemFinal} 
+      alt={`Foto de ${nome}`}
+      class="w-full h-full object-cover object-center group-hover:scale-107 transition-transform duration-500"
+    />
+    </div>
+
+  <div class="p-4">
+    <p class="text-orange-500 text-xs font-bold uppercase tracking-widest mb-1">{cargo}</p>
+    <h3 class="text-lg font-bold text-white leading-tight">
+      <span class="block">{primeiroNome}</span>
+      {restoNome && <span class="block text-sm text-zinc-400 font-medium truncate">{restoNome}</span>}
+    </h3>
+  </div>
+</div>

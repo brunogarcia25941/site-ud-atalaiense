@@ -7,21 +7,51 @@ import Analytics from '@vercel/analytics/astro'
 
 interface Props {
 	title: string;
-}
+	description?: string;
+  	image?: string;
+  	canonicalURL?: string;
+};
 
-const { title } = Astro.props;
+
+
+const { 
+  title, 
+  description = "Site oficial da União Desportiva Atalaiense. Notícias, plantéis, resultados e loja oficial.",
+  image = "/campo.jpg", // Imagem padrão que aparece na partilha
+  canonicalURL = Astro.url.href 
+} = Astro.props;
+
+const siteTitle = `${title} | UD Atalaiense`;
 ---
 <!doctype html>
-<html lang="pt">
+<html lang="pt-PT">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Site Oficial da União Desportiva Atalaiense" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{title} | UDA</title>
+		<link rel="icon" type="image" href="/logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{siteTitle} | UDA</title>
+		<meta name="description" content={description} />
+    	<link rel="canonical" href={canonicalURL} />
+
+    	<meta property="og:type" content="website" />
+    	<meta property="og:url" content={canonicalURL} />
+    	<meta property="og:title" content={siteTitle} />
+    	<meta property="og:description" content={description} />
+    	<meta property="og:image" content={new URL(image, Astro.url)} />
+
+    	<meta property="twitter:card" content="summary_large_image" />
+    	<meta property="twitter:url" content={canonicalURL} />
+    	<meta property="twitter:title" content={siteTitle} />
+    	<meta property="twitter:description" content={description} />
+    	<meta property="twitter:image" content={new URL(image, Astro.url)} />
 	</head>
 	<body class="bg-black text-white min-h-screen flex flex-col">
 		<Navbar />
+		<div class="bg-orange-500 text-black text-center py-1.5 text-xs md:text-sm font-bold uppercase tracking-widest">
+    		Site em Construção...
+  		</div>
 		<main class="flex-grow">
 			<slot />
 		</main>

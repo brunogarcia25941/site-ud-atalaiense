@@ -5,7 +5,7 @@ import jogadoresData from '../../data/jogadores.json';
 
 // Obtemos a lista de escalões de formação únicos
 const escaloes = [...new Set(jogadoresData
-    .filter(j => j.escalao !== 'Séniores')
+    .filter(j => j.escalao !== 'Seniores')
     .map(j => j.escalao))
 ];
 ---

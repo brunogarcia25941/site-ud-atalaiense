@@ -3,7 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import jogadoresData from '../../../data/jogadores.json';
 
 export async function getStaticPaths() {
-  const escaloes = [...new Set(jogadoresData.filter(j => j.escalao !== 'Séniores').map(j => j.escalao))];
+  const escaloes = [...new Set(jogadoresData.filter(j => j.escalao !== 'Seniores').map(j => j.escalao))];
   return escaloes.map(escalao => ({ params: { escalao } }));
 }
 

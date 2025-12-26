@@ -4,7 +4,7 @@ import jogadoresData from '../../../data/jogadores.json';
 
 // Filtra todas as épocas de séniores que não sejam a atual
 const epocasDisponiveis = [...new Set(jogadoresData
-  .filter(j => j.escalao === 'Séniores')
+  .filter(j => j.escalao === 'Seniores')
   .map(j => j.epoca)
 )].sort().reverse();
 ---
@@ -22,6 +22,7 @@ const epocasDisponiveis = [...new Set(jogadoresData
             <h2 class="text-3xl font-bold uppercase italic group-hover:text-orange-500 transition-colors">
               {epoca.replace('-', '/')}
             </h2>
+  
           </div>
           
         </a>

@@ -1,36 +1,45 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import PlayerCard from '../../../components/PlayerCard.astro';
 import jogadoresData from '../../../data/jogadores.json';
 
 export async function getStaticPaths() {
   const combinacoes = [...new Set(jogadoresData
-    .filter(j => j.escalao !== 'Séniores')
+    .filter(j => j.escalao !== 'Seniores')
     .map(j => `${j.escalao}|${j.epoca}`))];
 
   return combinacoes.map(c => {
     const [escalao, epoca] = c.split('|');
-    return {
-      params: { escalao, epoca },
-      props: { jogadores: jogadoresData.filter(j => j.escalao === escalao && j.epoca === epoca) }
-    };
+    return { params: { escalao, epoca } };
   });
 }
 
 const { escalao, epoca } = Astro.params;
-const { jogadores } = Astro.props;
+const epocaTitulo = epoca?.replace('-', '/');
 ---
-<Layout title={`${escalao} - ${epoca}`}>
-  <section class="max-w-7xl mx-auto px-4 py-12">
-    <header class="mb-12 border-l-4 border-orange-500 pl-6">
+
+<Layout title={`${escalao} - ${epocaTitulo}`}>
+  <section class="max-w-7xl mx-auto px-4 py-12 text-center">
+    <header class="mb-16 border-l-4 border-orange-500 pl-6 text-left">
       <h1 class="text-4xl font-black uppercase">{escalao}</h1>
-      <p class="text-zinc-400">{epoca?.replace('-', '/')}</p>
+      <p class="text-zinc-400 text-xl">{epocaTitulo}</p>
     </header>
-    <div class="mt-8 mb-8">
-      <a href={`/formacao/${escalao}`} class="text-orange-500 hover:underline">← Voltar a {escalao}</a>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <a href={`/formacao/${escalao}/${epoca}/jogadores`} 
+         class="group bg-zinc-900 border border-zinc-800 p-12 rounded-2xl hover:border-orange-500 transition-all shadow-xl">
+        <span class="text-5xl mb-4 block group-hover:scale-110 transition-transform">⚽</span>
+        <h2 class="text-2xl font-bold text-white uppercase italic">Ver Jogadores</h2>
+      </a>
+
+      <a href={`/formacao/${escalao}/${epoca}/equipa-tecnica`} 
+         class="group bg-zinc-900 border border-zinc-800 p-12 rounded-2xl hover:border-orange-500 transition-all shadow-xl">
+        <span class="text-5xl mb-4 block group-hover:scale-110 transition-transform">📋</span>
+        <h2 class="text-2xl font-bold text-white uppercase italic">Equipa Técnica</h2>
+      </a>
     </div>
-    <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-7 gap-6">
-      {jogadores.map(j => <PlayerCard {...j} />)}
+
+    <div class="mt-16 text-left">
+      <a href={`/formacao/${escalao}`} class="text-orange-500 hover:underline">← Voltar ao escalão {escalao}</a>
     </div>
   </section>
 </Layout>

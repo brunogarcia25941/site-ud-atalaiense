@@ -29,31 +29,87 @@
   },
   {
     "id": 5,
-    "nome": "Kit Equipamento GR Jogo UDA 2025/2026",
+    "nome": "Kit Equipamento GR Jogo Verde UDA 2025/2026",
     "preco": "---",
-    "descricao": "Conjunto Oficial Completo Equipamento Principal Guarda-Redes: Camisola de Jogo, Calções e Meias. Cores Diposníves: Verde, Vermelho, Azul Royal. Tamanhos disponíveis: MUDAR",
+    "descricao": "Conjunto Oficial Completo Equipamento Principal Guarda-Redes: Camisola de Jogo, Calções e Meias. Tamanhos disponíveis: MUDAR",
     "imagem": "/fotos/loja/kit_gr_verde.png"
   },
   {
     "id": 6,
-    "nome": "Camisola GR de Jogo UDA 2025/2026",
+    "nome": "Camisola GR de Jogo Verde UDA 2025/2026",
     "preco": "---",
-    "descricao": "Camisola Oficial Equipamento Principal Guarda-Redes. Cores Diposníves: Verde, Vermelho, Azul Royal. Tamanhos disponíveis: MUDAR",
+    "descricao": "Camisola Oficial Equipamento Principal Guarda-Redes. Tamanhos disponíveis: MUDAR",
     "imagem": "/fotos/loja/camisola_gr_verde.png"
   },
   {
     "id": 7,
-    "nome": "Calções GR de Jogo UDA 2025/2026",
+    "nome": "Calções GR de Jogo Verde UDA 2025/2026",
     "preco": "---",
-    "descricao": "Calções Oficiais Equipamento Principal Guarda-Redes. Cores Diposníves: Verde, Vermelho, Azul Royal. Tamanhos disponíveis: MUDAR",
+    "descricao": "Calções Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: MUDAR",
     "imagem": "/fotos/loja/calcoes_gr_verde.png"
   },
   {
     "id": 8,
-    "nome": "Meias GR de Jogo UDA 2025/2026",
+    "nome": "Meias GR de Jogo Verde UDA 2025/2026",
     "preco": "---",
-    "descricao": "Meias Oficiais Equipamento Principal Guarda-Redes. Cores Diposníves: Verde, Vermelho, Azul Royal. Tamanhos disponíveis: MUDAR",
+    "descricao": "Meias Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: MUDAR",
     "imagem": "/fotos/loja/meias_gr_verde.png"
+  },
+  {
+    "id": 13,
+    "nome": "Kit Equipamento GR Jogo Vermelho UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Conjunto Oficial Completo Equipamento Principal Guarda-Redes: Camisola de Jogo, Calções e Meias. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/kit_gr_vermelho.png"
+  },
+  {
+    "id": 14,
+    "nome": "Camisola GR de Jogo Vermelho UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Camisola Oficial Equipamento Principal Guarda-Redes. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/camisola_gr_vermelho.png"
+  },
+  {
+    "id": 15,
+    "nome": "Calções GR de Jogo Vermelho UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Calções Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/calcoes_gr_vermelho.png"
+  },
+  {
+    "id": 16,
+    "nome": "Meias GR de Jogo Vermelho UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Meias Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/meias_gr_vermelho.png"
+  },
+  {
+    "id": 17,
+    "nome": "Kit Equipamento GR Jogo Azul UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Conjunto Oficial Completo Equipamento Principal Guarda-Redes: Camisola de Jogo, Calções e Meias. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/kit_gr_azul.png"
+  },
+  {
+    "id": 18,
+    "nome": "Camisola GR de Jogo Azul UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Camisola Oficial Equipamento Principal Guarda-Redes. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/camisola_gr_azul.png"
+  },
+  {
+    "id": 19,
+    "nome": "Calções GR de Jogo Azul UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Calções Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/calcoes_gr_azul.png"
+  },
+  {
+    "id": 20,
+    "nome": "Meias GR de Jogo Azul UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Meias Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/meias_gr_azul.png"
   },
   {
     "id": 9,

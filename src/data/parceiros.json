@@ -2,31 +2,43 @@
   {
     "nome": "Abreviatura",
     "logo": "/fotos/parceiros/abreviatura.png",
-    "site": "#",
+    "site": "https://www.abreviatura.pt/",
     "categoria": "Oficial"
   },
   {
     "nome": "Baia",
     "logo": "/fotos/parceiros/baia.png",
-    "site": "#",
+    "site": "https://www.refrigerantesbaia.com/",
     "categoria": "Oficial"
   },
   {
     "nome": "Manuel Fonseca",
     "logo": "/fotos/parceiros/manuel_fonseca.png",
-    "site": "#",
+    "site": "https://www.facebook.com/ManuelFonsecaSeguros/?locale=pt_PT",
     "categoria": "Oficial"
   },
   {
     "nome": "Tcel",
     "logo": "/fotos/parceiros/tcel.png",
-    "site": "#",
+    "site": "https://tcel.pt/",
     "categoria": "Oficial"
   },
   {
     "nome": "Lasersite",
     "logo": "/fotos/parceiros/lasersite.png",
-    "site": "#",
+    "site": "https://www.laser-site.pt/",
+    "categoria": "Oficial"
+  },
+  {
+    "nome": "Farmácia da Barquinha",
+    "logo": "/fotos/parceiros/farmacia.png",
+    "site": "https://www.facebook.com/farmacia.da.barquinha/?locale=pt_PT",
+    "categoria": "Oficial"
+  },
+  {
+    "nome": "FACASAL",
+    "logo": "/fotos/parceiros/facasal.png",
+    "site": "https://facasal.com/",
     "categoria": "Oficial"
   }
 ]

@@ -18,7 +18,7 @@
   {
     "id": 3,
     "nome": "Rodrigo Dias",
-    "numero": 100,
+    "numero": 5,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/rodrigo_dias.jpg",
     "epoca": "2025-2026"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "nome": "Miguel Santos",
-    "numero": 19,
+    "numero": 9,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/miguel_santos.jpg",
     "epoca": "2025-2026"
@@ -98,7 +98,7 @@
   {
     "id": 13,
     "nome": "Frederico Ferreira",
-    "numero": 6,
+    "numero": 47,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
     "epoca": "2025-2026"
@@ -114,7 +114,7 @@
   {
     "id": 15,
     "nome": "Fábio Barros",
-    "numero": 9,
+    "numero": 19,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
     "epoca": "2025-2026"
@@ -130,7 +130,7 @@
   {
     "id": 17,
     "nome": "Tomás Carvalho",
-    "numero": 100,
+    "numero": 18,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
     "epoca": "2025-2026"
@@ -138,7 +138,7 @@
   {
     "id": 18,
     "nome": "Mohamet Santos",
-    "numero": 18,
+    "numero": 17,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
     "epoca": "2025-2026"
@@ -194,7 +194,7 @@
   {
     "id": 25,
     "nome": "José Mendes",
-    "numero": 100,
+    "numero": 6,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
     "epoca": "2025-2026"

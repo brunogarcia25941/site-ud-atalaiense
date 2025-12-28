@@ -1,16 +1,86 @@
 [
   {
     "id": 1,
-    "nome": "Equipamento Principal 2025/26",
-    "preco": "35,00€",
-    "descricao": "Camisola oficial da UD Atalaiense. Disponível em todos os tamanhos.",
-    "imagem": "/fotos/loja/default_player.jpg"
+    "nome": "Kit Equipamento de Jogo UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Conjunto Oficial Completo Equipamento Principal: Camisola de Jogo, Calções e Meias. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/kit_principal.png"
   },
   {
     "id": 2,
-    "nome": "Cachecol do Clube",
-    "preco": "10,00€",
-    "descricao": "Cachecol clássico 'Força Atalaiense'. 100% acrílico.",
-    "imagem": "/fotos/loja/default_player.jpg"
+    "nome": "Camisola de Jogo UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Camisola Oficial Equipamento Principal. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/camisola_principal.png"
+  },
+  {
+    "id": 3,
+    "nome": "Calções de Jogo UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Calções oficiais Equipamento Principal. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/calcoes_principal.png"
+  },
+  {
+    "id": 4,
+    "nome": "Meias de Jogo UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Meias oficiais Equipamento Principal. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/meias_principal.png"
+  },
+  {
+    "id": 5,
+    "nome": "Kit Equipamento GR Jogo UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Conjunto Oficial Completo Equipamento Principal Guarda-Redes: Camisola de Jogo, Calções e Meias. Cores Diposníves: Verde, Vermelho, Azul Royal. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/kit_gr_verde.png"
+  },
+  {
+    "id": 6,
+    "nome": "Camisola GR de Jogo UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Camisola Oficial Equipamento Principal Guarda-Redes. Cores Diposníves: Verde, Vermelho, Azul Royal. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/camisola_gr_verde.png"
+  },
+  {
+    "id": 7,
+    "nome": "Calções GR de Jogo UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Calções Oficiais Equipamento Principal Guarda-Redes. Cores Diposníves: Verde, Vermelho, Azul Royal. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/calcoes_gr_verde.png"
+  },
+  {
+    "id": 8,
+    "nome": "Meias GR de Jogo UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Meias Oficiais Equipamento Principal Guarda-Redes. Cores Diposníves: Verde, Vermelho, Azul Royal. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/meias_gr_verde.png"
+  },
+  {
+    "id": 9,
+    "nome": "Kit Equipamento de Treino UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Conjunto Oficial Completo Equipamento de Treino: Camisola, Calções e Meias. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/kit_treino.png"
+  },
+  {
+    "id": 10,
+    "nome": "Camisola de Treino UDA 2025/2026",
+    "preco": "---",
+    "descricao": "Camisola oficial Equipamento de treino. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/camisola_treino.png"
+  },
+  {
+    "id": 11,
+    "nome": "T-Shirt de Saída UDA 2025/26",
+    "preco": "---",
+    "descricao": "T-Shirt oficial de saída da equipa. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/tshirt_saida.png"
+  },
+  {
+    "id": 12,
+    "nome": "Kit de Saída Completo UDA 2025/26",
+    "preco": "---",
+    "descricao": "Conjunto Oficial Completo de Saída: Fato de Treino (Casaco e Calças) e Mochila incluída. Tamanhos disponíveis: MUDAR",
+    "imagem": "/fotos/loja/kit_saida.png"
   }
 ]

@@ -49,17 +49,17 @@ A fazer:
 Substituir lorem ipsum na historia do clube
 Jogos Passados e Futuros Jogos  FEITO
 Items Loja
-Atualizar Logotipos
-Por Logotipo Especial à frente do simbolo na navbar
+Atualizar Logotipos FEITO
+Por Logotipo Especial à frente do simbolo na navbar FEITO
 Mudar Morada
 Adicionar:
-    Resto dos Seniores (Jogadores FEITO(faltam Numeros)/Staff)
+    Resto dos Seniores (Jogadores FEITO/Staff FEITO)
     Fotos dos Seniores (Jogadores/Staff)
     Juniores FEITO
     Foto Juniores
     Juvenis FEITO
     Fotos Juvenis
-    Iniciados
+    Iniciados FEITO
     Fotos Iniciados
     Infantis FEITO
     Fotos Infantis

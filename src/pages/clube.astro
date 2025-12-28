@@ -2,76 +2,120 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="O Clube">
+<Layout 
+  title="O Clube" 
+  description="Conheça a história, os valores e o percurso da União Desportiva Atalaiense desde a sua fundação."
+>
   <section class="max-w-7xl mx-auto px-4 py-12 md:py-20">
-    <header class="mb-16 border-l-4 border-orange-500 pl-6">
-      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 italic">O <span class="text-orange-500">Clube</span></h1>
-      <p class="text-zinc-400 text-lg max-w-2xl">
-        Conheça a história, os valores e as conquistas da União Desportiva Atalaiense.
-      </p>
+    <header class="mb-20">
+      <h1 class="text-5xl md:text-8xl font-impact italic text-orange-500 uppercase leading-none">
+        A Nossa <span class="text-white block">História</span>
+      </h1>
+      <div class="h-2 w-24 bg-orange-600 mt-4"></div>
     </header>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-      <div class="lg:col-span-2 space-y-8">
-        <section>
-          <h2 class="text-2xl font-bold text-white mb-6 underline decoration-orange-500 underline-offset-8">A Nossa História</h2>
-          <div class="prose prose-zinc prose-invert max-w-none text-zinc-400 leading-relaxed space-y-4">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Fundada em [ANO], a União Desportiva Atalaiense tem sido um pilar na comunidade de Atalaia. Ao longo das décadas, o clube cresceu não só em termos de infraestruturas, mas também no seu papel social e desportivo na região.
-            </p>
-          </div>
-        </section>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-white uppercase italic border-l-4 border-orange-500 pl-4">Meio Século de União</h2>
+        <p class="text-zinc-400 leading-relaxed text-lg">
+          A União Desportiva Atalaiense carrega consigo o orgulho de uma longa vida dedicada ao desporto e à comunidade. Um marco inesquecível do nosso percurso foi a celebração dos <strong>50 anos de existência em 2014</strong>, um momento que honrou o símbolo que transportamos ao peito e todos aqueles que, desde a fundação, contribuíram para o crescimento deste emblema.
+        </p>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-video flex items-center justify-center group">
+        <img src="/fotos/antigas/foto_antiga1.jpg" alt="Celebração 50 Anos" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" onerror="this.src='https://placehold.co/800x450/18181b/f97316?text=Foto+50+Anos'"/>
+      </div>
+    </div>
 
-        <section >
-          <h2 class="text-2xl font-bold text-white mb-6 underline decoration-orange-500 underline-offset-8">Missão e Valores</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl">
-              <h3 class="text-orange-500 font-bold mb-2">Formação</h3>
-              <p class="text-sm text-zinc-400">Desenvolver jovens atletas não só no aspeto técnico, mas também nos valores éticos e desportivos.</p>
-            </div>
-            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl">
-              <h3 class="text-orange-500 font-bold mb-2">Comunidade</h3>
-              <p class="text-sm text-zinc-400">Ser um ponto de união para a freguesia e promover hábitos de vida saudáveis através do futebol.</p>
-            </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 lg:flex-row-reverse">
+      <div class="lg:order-2 space-y-6">
+        <h2 class="text-3xl font-bold text-white uppercase italic border-l-4 border-orange-500 pl-4">Escalões Completos</h2>
+        <p class="text-zinc-400 leading-relaxed text-lg">
+          Neste ano presente de <strong>2025</strong> o clube tem todos os escalões de formação completos. Desde petizes até aos seniores, a UDA tem pelo menos uma equipa em cada escalão a competir por campeonatos distritais. 
+        </p>
+        <p class="text-zinc-400 leading-relaxed">
+          Até então, o clube contava apenas com uma equipa sénior. Com esta nova visão, a UD Atalaiense expandiu-se rapidamente, passando a integrar todos os escalões nos Campeonatos Distritais da Associação de Futebol de Santarém, alcançando hoje cerca de <strong>150 atletas</strong>.
+        </p>
+      </div>
+      <div class="lg:order-1 rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-video flex items-center justify-center group">
+        <img src="/fotos/antigas/foto_antiga2.jpg" alt="Evolução do Clube" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" onerror="this.src='https://placehold.co/800x450/18181b/f97316?text=Foto+Mudança+2010'"/>
+      </div>
+    </div>
+
+    <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 md:p-16 mb-24 relative overflow-hidden">
+      <div class="absolute top-0 right-0 opacity-10 font-impact text-9xl -mr-10 -mt-10 rotate-12 text-orange-500">UDA</div>
+      
+      <div class="relative z-10 max-w-3xl">
+        <h2 class="text-3xl font-bold text-white uppercase italic mb-8"></h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <h3 class="text-orange-500 font-bold uppercase tracking-widest text-sm">Missão</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Por Escrever
+            </p>
           </div>
-        </section>
+          <div class="space-y-4">
+            <h3 class="text-orange-500 font-bold uppercase tracking-widest text-sm">Visão/Valores</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Por Escrever
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-24">
+      <div class="flex items-center gap-4 mb-12">
+        <h2 class="text-3xl md:text-5xl font-impact italic text-white uppercase italic">Palmarés</h2>
+        <div class="flex-1 h-px bg-zinc-800"></div>
       </div>
 
-      <aside class="space-y-12">
-        <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl">
-          <h2 class="text-xl font-bold text-white mb-6 uppercase tracking-wider">Palmarés</h2>
-          <ul class="space-y-6">
-            <li class="flex items-start gap-4">
-              <span class="text-2xl">🏆</span>
-              <div>
-                <p class="font-bold text-white">Campeonato Distrital</p>
-                <p class="text-xs text-zinc-500 uppercase">Época 20XX/XX</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-4">
-              <span class="text-2xl">🏆</span>
-              <div>
-                <p class="font-bold text-white">Taça do Ribatejo</p>
-                <p class="text-xs text-zinc-500 uppercase">Época 20XX/XX</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-4">
-              <span class="text-2xl">🥇</span>
-              <div>
-                <p class="font-bold text-white">Torneio de Abertura</p>
-                <p class="text-xs text-zinc-500 uppercase">Época 20XX/XX</p>
-              </div>
-            </li>
-          </ul>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl flex items-start gap-6 group hover:border-orange-500 transition-colors">
+          <div class="text-4xl">🏆</div>
+          <div>
+            <h3 class="text-orange-500 font-bold uppercase tracking-widest text-sm mb-1">Campeão Distrital</h3>
+            <p class="text-white font-bold text-xl">Seniores - 2ª Divisão</p>
+            <p class="text-zinc-500 text-sm mt-2">Época 20XX/20XX</p>
+          </div>
         </div>
-      </aside>
+
+        <div class="bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl flex items-start gap-6 group hover:border-orange-500 transition-colors">
+          <div class="text-4xl">🏅</div>
+          <div>
+            <h3 class="text-orange-500 font-bold uppercase tracking-widest text-sm mb-1">Taça do Ribatejo</h3>
+            <p class="text-white font-bold text-xl">Finalista Vencido</p>
+            <p class="text-zinc-500 text-sm mt-2">Época 20XX/20XX</p>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl flex items-start gap-6 group hover:border-orange-500 transition-colors">
+          <div class="text-4xl">🤝</div>
+          <div>
+            <h3 class="text-orange-500 font-bold uppercase tracking-widest text-sm mb-1">Prémio Ética</h3>
+            <p class="text-white font-bold text-xl">Cartão Branco AF Santarém</p>
+            <p class="text-zinc-500 text-sm mt-2">Futebol de Formação</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <p class="text-zinc-500 italic mb-8">"Proporcionar as melhores condições para a prática do futebol, formando cidadãos plenos para a nossa comunidade."</p>
+      <div class="flex justify-center gap-4">
+        <div class="h-1 w-12 bg-zinc-800"></div>
+        <div class="h-1 w-12 bg-orange-600"></div>
+        <div class="h-1 w-12 bg-zinc-800"></div>
+      </div>
     </div>
   </section>
 </Layout>
 
+<style>
+  /* Efeito de revelação suave para as secções */
+  section {
+    animation: fadeIn 1s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>

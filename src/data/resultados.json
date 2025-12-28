@@ -6,7 +6,7 @@
     "golosCasa": 1,
     "golosFora": 1,
     "data": "2025-12-21",
-    "competicao": "Campeonato Distrital",
+    "competicao": "Campeonato Distrital 2º Divisão",
     "status": "terminado"
   },
   {
@@ -16,7 +16,267 @@
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-01-11",
-    "competicao": "Campeonato Distrital",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 3,
+    "equipaCasa": "GD Benfica do Ribatejo",
+    "equipaFora": "Atalaiense",
+    "golosCasa": 1,
+    "golosFora": 3,
+    "data": "2025-09-21",
+    "competicao": "Taça do Ribatejo",
+    "status": "terminado"
+  },
+  {
+    "id": 4,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "Glória do Ribatejo",
+    "golosCasa": 1,
+    "golosFora": 4,
+    "data": "2025-09-28",
+    "competicao": "Taça do Ribatejo",
+    "status": "terminado"
+  },
+  {
+    "id": 5,
+    "equipaCasa": "CDR Alferrarede",
+    "equipaFora": "Atalaiense",
+    "golosCasa": 2,
+    "golosFora": 5,
+    "data": "2025-10-05",
+    "competicao": "Taça do Ribatejo",
+    "status": "terminado"
+  },
+  {
+    "id": 6,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "ADRC Vasco da Gama",
+    "golosCasa": 0,
+    "golosFora": 3,
+    "data": "2025-10-11",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "terminado"
+  },
+  {
+    "id": 7,
+    "equipaCasa": "Ortiga",
+    "equipaFora": "Atalaiense",
+    "golosCasa": 0,
+    "golosFora": 1,
+    "data": "2025-10-19",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "terminado"
+  },
+  {
+    "id": 8,
+    "equipaCasa": "Os Lagartos",
+    "equipaFora": "Atalaiense",
+    "golosCasa": 1,
+    "golosFora": 2,
+    "data": "2025-10-26",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "terminado"
+  },
+  {
+    "id": 9,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "AC Pernes",
+    "golosCasa": 1,
+    "golosFora": 1,
+    "data": "2025-11-02",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "terminado"
+  },
+  {
+    "id": 9,
+    "equipaCasa": "CDR Alferrarede",
+    "equipaFora": "Atalaiense",
+    "golosCasa": 1,
+    "golosFora": 5,
+    "data": "2025-11-09",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "terminado"
+  },
+  {
+    "id": 10,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "Abrantes e Benfica B",
+    "golosCasa": 2,
+    "golosFora": 0,
+    "data": "2025-11-16",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "terminado"
+  },
+  {
+    "id": 11,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "Entroncamento AC",
+    "golosCasa": "2p",
+    "golosFora": 2,
+    "data": "2025-11-23",
+    "competicao": "Taça do Ribatejo",
+    "status": "terminado"
+  },
+  {
+    "id": 12,
+    "equipaCasa": "Ferreira do Zêzere",
+    "equipaFora": "Atalaiense",
+    "golosCasa": 1,
+    "golosFora": 3,
+    "data": "2025-11-30",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "terminado"
+  },
+  {
+    "id": 13,
+    "equipaCasa": "CP Pego",
+    "equipaFora": "Atalaiense",
+    "golosCasa": 2,
+    "golosFora": 0,
+    "data": "2025-12-07",
+    "competicao": "Taça do Ribatejo",
+    "status": "terminado"
+  },
+  {
+    "id": 14,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "CP Pego",
+    "golosCasa": 1,
+    "golosFora": 1,
+    "data": "2025-12-14",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "terminado"
+  },
+  {
+    "id": 15,
+    "equipaCasa": "CCD Caxarias",
+    "equipaFora": "Atalaiense",
+    "golosCasa": 1,
+    "golosFora": 1,
+    "data": "2025-12-21",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "terminado"
+  },
+  {
+    "id": 16,
+    "equipaCasa": "VFC Mindense",
+    "equipaFora": "Atalaiense",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-01-17",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 17,
+    "equipaCasa": "ADRC Vasco da Gama",
+    "equipaFora": "Atalaiense",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-01-25",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 18,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "Ortiga",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-02-01",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 19,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "Os Lagartos",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-02-08",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 20,
+    "equipaCasa": "AC Pernes",
+    "equipaFora": "Atalaiense",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-02-22",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 21,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "CDR Alferrarede",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-03-01",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 22,
+    "equipaCasa": "Abrantes e Benfica B",
+    "equipaFora": "Atalaiense",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-03-15",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 23,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "Ferreira do Zêzere",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-03-22",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 24,
+    "equipaCasa": "CP Pego",
+    "equipaFora": "Atalaiense",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-03-29",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 25,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "CCD Caxarias",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-04-12",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 26,
+    "equipaCasa": "Espinheirense",
+    "equipaFora": "Atalaiense",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-04-19",
+    "competicao": "Campeonato Distrital 2º Divisão",
+    "status": "agendado"
+  },
+  {
+    "id": 27,
+    "equipaCasa": "Atalaiense",
+    "equipaFora": "VFC Mindense",
+    "golosCasa": null,
+    "golosFora": null,
+    "data": "2026-04-26",
+    "competicao": "Campeonato Distrital 2º Divisão",
     "status": "agendado"
   }
 ]

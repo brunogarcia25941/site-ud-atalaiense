@@ -60,7 +60,9 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
         <h2 class="text-3xl font-impact uppercase mb-8 italic underline decoration-orange-500 underline-offset-8">Resultados</h2>
         <div>
           <p class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Próximo Jogo</p>
+          <div class="space-y-4">
           {proximosJogos.map(jogo => <ResultCard {...jogo} />)}
+          </div>
         </div>
         <div>
           <p class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Últimos Resultados</p>

@@ -18,6 +18,7 @@ export async function getStaticPaths() {
 
 const { epoca } = Astro.params;
 const { jogadores } = Astro.props;
+const jogadoresOrdenados = jogadores.sort((a, b) => a.numero - b.numero);
 const epocaTitulo = epoca ? epoca.replace('-', '/') : '';
 ---
 
@@ -28,11 +29,11 @@ const epocaTitulo = epoca ? epoca.replace('-', '/') : '';
       <p class="text-zinc-400">{epocaTitulo}</p>
     </header>
     <div class="mt-8 mb-8">
-      <a href="/seniores/arquivo" class="text-orange-500 hover:underline">← Voltar a Seniores</a>
+      <a href={`/seniores/arquivo/${epoca}`} class="text-orange-500 hover:underline">← Voltar a Seniores {" " + epoca}</a>
     </div>
 
     <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-7 gap-6">
-      {jogadores.map((jogador) => (
+      {jogadoresOrdenados.map((jogador) => (
         <PlayerCard 
           nome={jogador.nome} 
           numero={jogador.numero}

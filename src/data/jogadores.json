@@ -4,7 +4,7 @@
     "nome": "João Silva",
     "numero": 15,
     "escalao": "Seniores",
-    "foto": "/fotos/jogadores/seniores/joao_silva.jpg",
+    "foto": "/fotos/jogadores/seniores/seniores2526/joao_silva.jpg",
     "epoca": "2025-2026"
   },
   {
@@ -12,15 +12,15 @@
     "nome": "Alexandre Rodrigues",
     "numero": 7,
     "escalao": "Seniores",
-    "foto": "/fotos/jogadores/seniores/alexandre_rodrigues.jpg",
+    "foto": "/fotos/jogadores/seniores/seniores2526/alexandre_rodrigues.jpg",
     "epoca": "2025-2026"
   },
   {
     "id": 3,
     "nome": "Rodrigo Dias",
-    "numero": 17,
+    "numero": 100,
     "escalao": "Seniores",
-    "foto": "/fotos/jogadores/seniores/rodrigo_dias.jpg",
+    "foto": "/fotos/jogadores/seniores/seniores2526/rodrigo_dias.jpg",
     "epoca": "2025-2026"
   },
   {
@@ -28,7 +28,7 @@
     "nome": "Luís Garcia",
     "numero": 4,
     "escalao": "Seniores",
-    "foto": "/fotos/jogadores/seniores/luis_garcia.jpg",
+    "foto": "/fotos/jogadores/seniores/seniores2526/luis_garcia.jpg",
     "epoca": "2025-2026"
   },
   {
@@ -36,7 +36,7 @@
     "nome": "Miguel Santos",
     "numero": 19,
     "escalao": "Seniores",
-    "foto": "/fotos/jogadores/seniores/miguel_santos.jpg",
+    "foto": "/fotos/jogadores/seniores/seniores2526/miguel_santos.jpg",
     "epoca": "2025-2026"
   },
   {
@@ -44,7 +44,7 @@
     "nome": "Paulo Santana",
     "numero": 1,
     "escalao": "Seniores",
-    "foto": "/fotos/jogadores/seniores/paulo_santana.jpg",
+    "foto": "/fotos/jogadores/seniores/seniores2526/paulo_santana.jpg",
     "epoca": "2025-2026"
   },
   {
@@ -52,7 +52,7 @@
     "nome": "Leandro Abreu",
     "numero": 11,
     "escalao": "Seniores",
-    "foto": "/fotos/jogadores/seniores/leandro_abreu.jpg",
+    "foto": "/fotos/jogadores/seniores/seniores2526/leandro_abreu.jpg",
     "epoca": "2025-2026"
   },
   {
@@ -60,7 +60,7 @@
     "nome": "Afonso Bonacho",
     "numero": 3,
     "escalao": "Seniores",
-    "foto": "/fotos/jogadores/seniores/afonso_bonacho.jpg",
+    "foto": "/fotos/jogadores/seniores/seniores2526/afonso_bonacho.jpg",
     "epoca": "2025-2026"
   },
   {
@@ -68,15 +68,15 @@
     "nome": "João Ferreira",
     "numero": 8,
     "escalao": "Seniores",
-    "foto": "/fotos/jogadores/seniores/joao_ferreira.jpg",
+    "foto": "/fotos/jogadores/seniores/seniores2526/joao_ferreira.jpg",
     "epoca": "2025-2026"
   },
   {
   "id": 10,
   "nome": "Sergio Sales",
-  "numero": 9,
+  "numero": 100,
   "escalao": "Juniores",
-  "foto": "/fotos/jogadores/formacao/sergio_sales.jpg",
+  "foto": "/fotos/jogadores/formacao/juniores/juniores2526/sergio_sales.jpg",
   "epoca": "2025-2026"
   },
   {
@@ -84,7 +84,7 @@
   "nome": "Pedro Jesus",
   "numero": 11,
   "escalao": "Juvenis",
-  "foto": "/fotos/jogadores/formacao/pedro_jesus.jpg",
+  "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/pedro_jesus.jpg",
   "epoca": "2025-2026"
   },
   {
@@ -94,5 +94,1030 @@
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/joao_silva.jpg",
     "epoca": "2024-2025"
+  },
+  {
+    "id": 13,
+    "nome": "Frederico Ferreira",
+    "numero": 6,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 14,
+    "nome": "Hélder Gonçalves",
+    "numero": 22,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 15,
+    "nome": "Fábio Barros",
+    "numero": 9,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 16,
+    "nome": "Miguel Costa",
+    "numero": 12,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 17,
+    "nome": "Tomás Carvalho",
+    "numero": 100,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 18,
+    "nome": "Mohamet Santos",
+    "numero": 18,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 19,
+    "nome": "Diogo Marçalo",
+    "numero": 20,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 20,
+    "nome": "Joel Marcão",
+    "numero": 21,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 21,
+    "nome": "Marco Leal",
+    "numero": 2,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 22,
+    "nome": "Pedro Fernandes",
+    "numero": 16,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 23,
+    "nome": "Wellerson Paula",
+    "numero": 10,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 24,
+    "nome": "Dário Mendes",
+    "numero": 14,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 25,
+    "nome": "José Mendes",
+    "numero": 100,
+    "escalao": "Seniores",
+    "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 26,
+    "nome": "Afonso Ferreira",
+    "numero": 30,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 27,
+    "nome": "Carlos Cavaca",
+    "numero": 29,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 28,
+    "nome": "Dinis Baptista",
+    "numero": 13,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 29,
+    "nome": "Dinis Pereira",
+    "numero": 9,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 30,
+    "nome": "Edson Cardoso",
+    "numero": 18,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 31,
+    "nome": "Gabriel Lobo",
+    "numero": 12,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 32,
+    "nome": "Guilherme Mourato",
+    "numero": 8,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 33,
+    "nome": "Hedmar Carneiro",
+    "numero": 67,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 34,
+    "nome": "João Ba",
+    "numero": 16,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 35,
+    "nome": "Martim Mendes",
+    "numero": 10,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 36,
+    "nome": "Martim Heleno",
+    "numero": 6,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 37,
+    "nome": "Pedro Teixeira",
+    "numero": 4,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 38,
+    "nome": "Rodrigo Couto",
+    "numero": 3,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 39,
+    "nome": "Samuel Afonso",
+    "numero": 19,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 40,
+    "nome": "Tiago Fernandes",
+    "numero": 28,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 41,
+    "nome": "Zenildo Pinto",
+    "numero": 7,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 42,
+    "nome": "Simão Matos",
+    "numero": 52,
+    "escalao": "Juvenis",
+    "foto": "/fotos/jogadores/formacao/juvenis/juvenis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 106,
+    "nome": "Afonso Domingues",
+    "numero": 94,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 74,
+    "nome": "Afonso Barrela",
+    "numero": 27,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 59,
+    "nome": "André Mota",
+    "numero": 8,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 43,
+    "nome": "Afonso Lopes",
+    "numero": 30,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 44,
+    "nome": "Ângelo Gomes",
+    "numero": 77,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 45,
+    "nome": "Artur Caires",
+    "numero": 4,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 46,
+    "nome": "Bianca Cirqueira",
+    "numero": 26,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 47,
+    "nome": "Dinis Raimundo",
+    "numero": 3,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 48,
+    "nome": "Gustavo Doirado",
+    "numero": 7,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 49,
+    "nome": "Henrique Oliveira",
+    "numero": 9,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 50,
+    "nome": "Jaime Pedro",
+    "numero": 1,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 51,
+    "nome": "José Doirado",
+    "numero": 99,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 52,
+    "nome": "Leandro Costa",
+    "numero": 20,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 53,
+    "nome": "Leonor Duarte",
+    "numero": 48,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 54,
+    "nome": "Lourenço Espadinha",
+    "numero": 16,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 55,
+    "nome": "Miguel Sousa",
+    "numero": 18,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  }
+  ,
+  {
+    "id": 56,
+    "nome": "Raphael Gomes",
+    "numero": 8,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 57,
+    "nome": "Tomás Martins",
+    "numero": 28,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 58,
+    "nome": "Vicente Dias",
+    "numero": 17,
+    "escalao": "Sub10",
+    "foto": "/fotos/jogadores/formacao/sub10/sub102526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 60,
+    "nome": "Daniel Ruivo",
+    "numero": 17,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 61,
+    "nome": "Dinis Pires",
+    "numero": 27,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 62,
+    "nome": "Diogo Nunes",
+    "numero": 15,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 63,
+    "nome": "Francisco Ferreira",
+    "numero": 88,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 64,
+    "nome": "Francisco Pinto",
+    "numero": 20,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 65,
+    "nome": "Guilherme Faustino",
+    "numero": 47,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 66,
+    "nome": "Jason Santos",
+    "numero": 10,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 67,
+    "nome": "João Jorge",
+    "numero": 28,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 68,
+    "nome": "Manuel Constantino",
+    "numero": 18,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 69,
+    "nome": "Mateus Lawrence",
+    "numero": 87,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 70,
+    "nome": "Matias Costa",
+    "numero": 99,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 71,
+    "nome": "Pedro Rainho",
+    "numero": 19,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 72,
+    "nome": "Simão Antunes",
+    "numero": 7,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 73,
+    "nome": "Tiago Sousa",
+    "numero": 16,
+    "escalao": "Sub11",
+    "foto": "/fotos/jogadores/formacao/sub11/sub112526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 75,
+    "nome": "Anderson Ferreira",
+    "numero": 11,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 76,
+    "nome": "António Mendes",
+    "numero": 28,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 77,
+    "nome": "Carson Gourgel",
+    "numero": 93,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 78,
+    "nome": "Diogo Alexandre",
+    "numero": 20,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 79,
+    "nome": "Diogo Inácio",
+    "numero": 18,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 80,
+    "nome": "Diogo Lourenço",
+    "numero": 99,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 81,
+    "nome": "Diogo Pereira",
+    "numero": 6,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 82,
+    "nome": "Filipe Pereira",
+    "numero": 4,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 83,
+    "nome": "Francisco Amado",
+    "numero": 19,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 84,
+    "nome": "Francisco Bernardino",
+    "numero": 3,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 85,
+    "nome": "Francisco Cláudio",
+    "numero": 31,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 86,
+    "nome": "Gonçalo Raposo",
+    "numero": 10,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 87,
+    "nome": "Guilherme Veloso",
+    "numero": 21,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 88,
+    "nome": "Gustavo Afonso",
+    "numero": 7,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 89,
+    "nome": "José Nunes",
+    "numero": 25,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 90,
+    "nome": "Joshua Mbala",
+    "numero": 14,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 91,
+    "nome": "José Pedro",
+    "numero": 8,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 92,
+    "nome": "Leonardo Santana",
+    "numero": 89,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 93,
+    "nome": "Lucas Gonçalves",
+    "numero": 15,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 94,
+    "nome": "Martim Rodrigues",
+    "numero": 24,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 95,
+    "nome": "Matias Cordeiro",
+    "numero": 1,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 96,
+    "nome": "Miguel Baptista",
+    "numero": 26,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 97,
+    "nome": "Rafael Dinis",
+    "numero": 5,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 98,
+    "nome": "Renato Esteves",
+    "numero": 2,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 99,
+    "nome": "Rodrigo Marques",
+    "numero": 16,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 100,
+    "nome": "Rodrigo Tomás",
+    "numero": 34,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 101,
+    "nome": "Salvador Abreu",
+    "numero": 17,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 102,
+    "nome": "Salvador Nobre",
+    "numero": 30,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 103,
+    "nome": "Tomás Cotafo",
+    "numero": 22,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 104,
+    "nome": "Tomás Lino",
+    "numero": 9,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 105,
+    "nome": "Tomás Raimundo",
+    "numero": 67,
+    "escalao": "Infantis",
+    "foto": "/fotos/jogadores/formacao/infantis/infantis2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 107,
+    "nome": "Daniel Parracho",
+    "numero": 20,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 108,
+    "nome": "Davi Banho",
+    "numero": 19,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 109,
+    "nome": "Dinis Caixinha",
+    "numero": 79,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 110,
+    "nome": "Diogo Rosa",
+    "numero": 16,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 111,
+    "nome": "Emanuel Gomes",
+    "numero": 46,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 112,
+    "nome": "Guilherme Alves",
+    "numero": 10,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 113,
+    "nome": "Gustavo Lourenço",
+    "numero": 11,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 114,
+    "nome": "Ivan Sales",
+    "numero": 21,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 115,
+    "nome": "Jaime Valente",
+    "numero": 5,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 116,
+    "nome": "João Rufino",
+    "numero": 18,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 117,
+    "nome": "Leonardo Fernandes",
+    "numero": 7,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 118,
+    "nome": "Leonardo Gomes",
+    "numero": 4,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 119,
+    "nome": "Martim Busca",
+    "numero": 9,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 120,
+    "nome": "Martim Raimundo",
+    "numero": 6,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 121,
+    "nome": "Miguel Rodrigues",
+    "numero": 17,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 122,
+    "nome": "Pedro Almeida",
+    "numero": 1,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 123,
+    "nome": "Pedro Inácio",
+    "numero": 8,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 124,
+    "nome": "Rafael Felicio",
+    "numero": 12,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 125,
+    "nome": "Renato José",
+    "numero": 77,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 126,
+    "nome": "Ricardo Oliveira",
+    "numero": 14,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 127,
+    "nome": "Rodrigo Ferreira",
+    "numero": 23,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 128,
+    "nome": "Rúben Carvalho",
+    "numero": 3,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 129,
+    "nome": "Simão Matos",
+    "numero": 52,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 130,
+    "nome": "Tomás Mendes",
+    "numero": 42,
+    "escalao": "Iniciados",
+    "foto": "/fotos/jogadores/formacao/iniciados/iniciados2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 131,
+    "nome": "Afonso Ribeiro",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 132,
+    "nome": "Gabriel Alves",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 133,
+    "nome": "Henrique Maia",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 134,
+    "nome": "João Martinho",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 135,
+    "nome": "Luis Gois",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 136,
+    "nome": "Martim Morais",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 137,
+    "nome": "Simão Pacheco",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 138,
+    "nome": "Helton Monteiro",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 139,
+    "nome": "João Silva",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
+  },
+  {
+    "id": 140,
+    "nome": "João Conde",
+    "numero": 100,
+    "escalao": "Juniores",
+    "foto": "/fotos/jogadores/formacao/juniores/juniores2526/default_player.jpg",
+    "epoca": "2025-2026"
   }
 ]

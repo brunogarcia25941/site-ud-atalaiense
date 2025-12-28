@@ -6,5 +6,29 @@
     "escalao": "Seniores",
     "epoca": "2025-2026",
     "foto": "/fotos/staff/joao_paulo.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Filipe Miranda",
+    "cargo": "Treinador Adjunto",
+    "escalao": "Seniores",
+    "epoca": "2025-2026",
+    "foto": "/fotos/staff/default_player.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Antonio Monteiro",
+    "cargo": "Diretor de Escalão",
+    "escalao": "Seniores",
+    "epoca": "2025-2026",
+    "foto": "/fotos/staff/default_player.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Maria Castro",
+    "cargo": "Fisioterapeuta",
+    "escalao": "Seniores",
+    "epoca": "2025-2026",
+    "foto": "/fotos/staff/default_player.jpg"
   }
 ]

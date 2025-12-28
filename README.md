@@ -47,25 +47,25 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 A fazer:
 Substituir lorem ipsum na historia do clube
-Jogos Passados e Futuros Jogos
+Jogos Passados e Futuros Jogos  FEITO
 Items Loja
 Atualizar Logotipos
 Por Logotipo Especial à frente do simbolo na navbar
 Mudar Morada
 Adicionar:
-    Resto dos Seniores (Jogadores/Staff)
+    Resto dos Seniores (Jogadores FEITO(faltam Numeros)/Staff)
     Fotos dos Seniores (Jogadores/Staff)
-    Juniores
+    Juniores FEITO
     Foto Juniores
-    Juvenis
+    Juvenis FEITO
     Fotos Juvenis
     Iniciados
     Fotos Iniciados
-    Infantis
+    Infantis FEITO
     Fotos Infantis
-    Sub11
+    Sub11 FEITO
     Fotos Sub11
-    Sub10
+    Sub10 FEITO
     Fotos Sub10
     Sub8
     Fotos Sub8

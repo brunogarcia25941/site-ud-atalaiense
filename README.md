@@ -78,6 +78,7 @@ Adicionar:
     Fotos Seniores Anteriores
     Equipas Tecnicas Anteriores
 
-tirar kit de saida
-meter kit atleta, tem saida, mochila, t shirt branca e dois equipamentos de treino
+tirar kit de saida FEITO
+meter kit atleta, tem saida, mochila, t shirt branca e dois equipamentos de treino FEITO
+meter equipamento de treino sozinho e mochila sozinha FEITO
 adicionar carrinho FEITO

@@ -134,9 +134,23 @@
   },
   {
     "id": 12,
-    "nome": "Kit de Saída Completo UDA 2025/26",
+    "nome": "Kit de Atleta Completo UDA 2025/26",
     "preco": "---",
-    "descricao": "Conjunto Oficial Completo de Saída: Fato de Treino (Casaco e Calças) e Mochila incluída. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
-    "imagem": "/fotos/loja/kit_saida.png"
+    "descricao": "Conjunto Oficial Completo de Atleta: Fato de Treino (Casaco e Calças), T-shirt de Saída, 2x Kits de Treino (Camisola, Calções e Meias) e Mochila incluída. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
+    "imagem": "/fotos/loja/kit_atleta.png"
+  },
+  {
+    "id": 21,
+    "nome": "Fato de Treino Atleta UDA 2025/26",
+    "preco": "---",
+    "descricao": "Fato de Treino Oficial de Atleta: Casaco e Calças. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
+    "imagem": "/fotos/loja/fato_treino.png"
+  },
+  {
+    "id": 22,
+    "nome": "Mochila de Atleta UDA 2025/26",
+    "preco": "---",
+    "descricao": "Mochila Oficial de Atleta. Tamanho único.",
+    "imagem": "/fotos/loja/mochila.png"
   }
 ]

@@ -48,10 +48,10 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 A fazer:
 Substituir lorem ipsum na historia do clube
 Jogos Passados e Futuros Jogos  FEITO
-Items Loja (FALTA MUDAR EQUIPAMENTO DE GR E METER AS OUTRAS DUAS CORES)
+Items Loja FEITO (talvez melhorar qualidade e falta precos)
 Atualizar Logotipos FEITO
 Por Logotipo Especial à frente do simbolo na navbar FEITO
-Mudar Morada
+Mudar Morada FEITO
 Mudar nomes equipas
 Adicionar:
     Resto dos Seniores (Jogadores FEITO/Staff FEITO)

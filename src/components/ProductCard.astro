@@ -1,13 +1,14 @@
 ---
 // src/components/ProductCard.astro
 interface Props {
+  id: number;
   nome: string;
   preco: string;
   descricao: string;
   imagem: string;
 }
 
-const { nome, preco, descricao, imagem } = Astro.props;
+const {id, nome, preco, descricao, imagem } = Astro.props;
 ---
 <div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden group hover:border-orange-500 transition-all flex flex-col h-full">
   <div class="aspect-square bg-zinc-800 overflow-hidden shrink-0">
@@ -21,11 +22,15 @@ const { nome, preco, descricao, imagem } = Astro.props;
     </div>
     <p class="text-zinc-400 text-sm mb-6">{descricao}</p>
     
+    
     <button 
-      class="order-btn w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 rounded-xl transition-all mt-auto"
-      data-produto={nome}
-    >
-      Encomendar
-    </button>
+        class="add-to-cart-btn w-full bg-orange-600 hover:bg-white hover:text-orange-600 text-white font-black py-3 rounded-xl transition-colors mt-auto"
+        data-id={id}
+        data-nome={nome}
+        data-preco={preco}
+        data-img={imagem}
+      >
+        Adicionar
+      </button>
   </div>
 </div>

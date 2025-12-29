@@ -80,4 +80,4 @@ Adicionar:
 
 tirar kit de saida
 meter kit atleta, tem saida, mochila, t shirt branca e dois equipamentos de treino
-adicionar carrinho
+adicionar carrinho FEITO

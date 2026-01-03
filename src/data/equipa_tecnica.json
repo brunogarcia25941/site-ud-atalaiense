@@ -38,5 +38,45 @@
     "escalao": "Seniores",
     "epoca": "2025-2026",
     "foto": "/fotos/staff/default_player.jpg"
+  },
+  {
+    "id": 6,
+    "nome": "Bruno Garcia",
+    "cargo": "Treinador Principal",
+    "escalao": "Sub10",
+    "epoca": "2025-2026",
+    "foto": "/fotos/staff/default_player.jpg"
+  },
+  {
+    "id": 7,
+    "nome": "Afonso Graça",
+    "cargo": "Treinador Principal",
+    "escalao": "Sub10",
+    "epoca": "2025-2026",
+    "foto": "/fotos/staff/default_player.jpg"
+  },
+  {
+    "id": 9,
+    "nome": "Fábio Lopes",
+    "cargo": "Membro do Departamento de Futebol",
+    "escalao": "Sub10",
+    "epoca": "2025-2026",
+    "foto": "/fotos/staff/default_player.jpg"
+  },
+  {
+    "id": 8,
+    "nome": "Carlos Lawrence",
+    "cargo": "Treinador Principal",
+    "escalao": "Sub11",
+    "epoca": "2025-2026",
+    "foto": "/fotos/staff/default_player.jpg"
+  },
+  {
+    "id": 10,
+    "nome": "Paulo Antunes",
+    "cargo": "Membro do Departamento de Futebol",
+    "escalao": "Sub11",
+    "epoca": "2025-2026",
+    "foto": "/fotos/staff/default_player.jpg"
   }
 ]

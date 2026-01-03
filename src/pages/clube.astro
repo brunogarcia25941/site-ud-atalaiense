@@ -1,14 +1,160 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// Geramos 16 placeholders para a galeria principal para garantir muitos espaços
+const galleryPlaceholders = Array.from({ length: 16 });
 ---
 
 <Layout 
   title="O Clube" 
-  description="União Desportiva Atalaiense: 61 anos a formar cidadãos e atletas em Vila Nova da Barquinha. Conheça a nossa visão, valores e projetos."
+  description="Conhece a história, a missão, a visão e os valores da União Desportiva Atalaiense."
 >
-  <section class="max-w-7xl mx-auto px-4 py-12 md:py-20">
+  <section class="relative py-24 bg-zinc-950 overflow-hidden border-b border-zinc-900">
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <img src="/logo.png" alt="" class="absolute -right-20 -bottom-20 w-[500px] brightness-50" />
+    </div>
     
-    
+    <div class="relative z-10 max-w-7xl mx-auto px-4">
+      <span class="text-orange-500 font-bold uppercase tracking-[0.3em] text-lg mb-4 block">União Desportiva Atalaiense</span>
+      <h1 class="text-6xl md:text-8xl font-impact uppercase italic text-white leading-tight">
+        O Nosso <br/> <span class="text-orange-500 underline decoration-white decoration-4 underline-offset-8">Clube</span>
+      </h1>
+    </div>
+  </section>
+
+  <section class="py-20 max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div class="space-y-8 text-zinc-300 leading-relaxed text-lg">
+        <h2 class="text-4xl font-impact uppercase italic text-white mb-6">
+          61 Anos de <span class="text-orange-500">História</span>
+        </h2>
+        <div class="space-y-6 border-l-2 border-orange-600 pl-6">
+          <p>
+            A <span class="text-white font-bold">União Desportiva Atalaiense (UDA)</span> celebra atualmente os seus <span class="text-orange-500 font-bold">61 anos de atividade</span>. Fundada em 1964, o clube tem mantido uma atividade ininterrupta na promoção do desporto e do associativismo em Vila Nova da Barquinha.
+          </p>
+          <p>
+            Com sede em Vila Velha de Atalaia, a UDA envolve diariamente mais de <span class="text-white font-bold">150 atletas</span> e as respetivas famílias. O nosso compromisso vai além do campo, servindo como um ponto de união para toda a comunidade.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-4 gap-3">
+        <div class="col-span-2 row-span-2 rounded-lg overflow-hidden bg-zinc-900 border border-zinc-800">
+          <img src="/fotos/campo.jpg" class="w-full h-full object-cover" alt="Campo UDA" />
+        </div>
+        <div class="col-span-2 rounded-lg overflow-hidden bg-zinc-900 border border-zinc-800">
+          <img src="/fotos/antigas/foto_antiga1.jpg" class="w-full h-48 object-cover" alt="História 1" />
+        </div>
+        <div class="rounded-lg overflow-hidden bg-zinc-900 border border-zinc-800">
+          <img src="/fotos/antigas/foto_antiga2.jpg" class="w-full h-48 object-cover" alt="História 2" />
+        </div>
+        <div class="rounded-lg overflow-hidden bg-zinc-900 border border-zinc-800">
+          <img src="/fotos/noticias/seniorescaxarias.jpg" class="w-full h-48 object-cover" alt="Seniores" />
+        </div>
+        <div class="col-span-1 rounded-lg overflow-hidden bg-zinc-900 border border-zinc-800">
+          <img src="/fotos/noticias/feliznatal.jpg" class="w-full h-32 object-cover" alt="Evento" />
+        </div>
+        <div class="col-span-2 rounded-lg overflow-hidden bg-zinc-900 border border-zinc-800">
+          <div class="grid grid-cols-2 h-full gap-1">
+             <div class="bg-zinc-800 h-full flex items-center justify-center text-[10px] italic text-zinc-600">Foto Slot</div>
+             <div class="bg-zinc-800 h-full flex items-center justify-center text-[10px] italic text-zinc-600">Foto Slot</div>
+             <div class="bg-zinc-800 h-full flex items-center justify-center text-[10px] italic text-zinc-600">Foto Slot</div>
+             <div class="bg-zinc-800 h-full flex items-center justify-center text-[10px] italic text-zinc-600">Foto Slot</div>
+          </div>
+        </div>
+        <div class="col-span-1 rounded-lg overflow-hidden bg-zinc-900 border border-zinc-800">
+           <img src="/fotos/antigas/foto_antiga3.jpg" class="w-full h-32 object-cover" alt="História 3" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-zinc-900/50 border-y border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-orange-600 flex items-center justify-center rounded-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="text-2xl font-impact uppercase italic text-white tracking-wider">Missão</h3>
+          </div>
+          <p class="text-zinc-400 leading-relaxed italic border-l-2 border-zinc-700 pl-4">
+            "Fomento da prática desportiva, especialmente de futebol de formação, bem como a divulgação e promoção de conhecimentos de carácter social, cultural e associativo."
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-orange-600 flex items-center justify-center rounded-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </div>
+            <h3 class="text-2xl font-impact uppercase italic text-white tracking-wider">Visão</h3>
+          </div>
+          <p class="text-zinc-400 leading-relaxed italic border-l-2 border-zinc-700 pl-4">
+            "Ser um Clube de referência no Concelho e na Região, no âmbito da formação desportiva e cívica."
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-orange-600 flex items-center justify-center rounded-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="text-2xl font-impact uppercase italic text-white tracking-wider">Valores</h3>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            {["Respeito", "Solidariedade", "Ética", "Compromisso", "Fair-Play", "Responsabilidade"].map(valor => (
+              <span class="text-zinc-400 text-sm flex items-center gap-2">
+                <span class="w-1 h-1 bg-orange-600 rounded-full"></span>
+                {valor}
+              </span>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-impact uppercase italic text-white">Galeria de <span class="text-orange-500">Momentos</span></h2>
+      <p class="text-zinc-500 mt-4 italic">O registo visual da nossa história e paixão</p>
+    </div>
+
+    <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+      <img src="/fotos/campo.jpg" class="rounded-xl border border-zinc-800 hover:border-orange-500 transition-colors" alt="Galeria" />
+      <img src="/fotos/antigas/foto_antiga1.jpg" class="rounded-xl border border-zinc-800 hover:border-orange-500 transition-colors" alt="Galeria" />
+      <img src="/fotos/noticias/seniorescaxarias.jpg" class="rounded-xl border border-zinc-800 hover:border-orange-500 transition-colors" alt="Galeria" />
+      <img src="/fotos/noticias/feliznatal.jpg" class="rounded-xl border border-zinc-800 hover:border-orange-500 transition-colors" alt="Galeria" />
+      
+      <div class="grid grid-cols-2 gap-2">
+         <div class="aspect-square bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center text-[10px] text-zinc-700 italic">Mini Slot 1</div>
+         <div class="aspect-square bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center text-[10px] text-zinc-700 italic">Mini Slot 2</div>
+         <div class="aspect-square bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center text-[10px] text-zinc-700 italic">Mini Slot 3</div>
+         <div class="aspect-square bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center text-[10px] text-zinc-700 italic">Mini Slot 4</div>
+      </div>
+
+      <img src="/fotos/antigas/foto_antiga2.jpg" class="rounded-xl border border-zinc-800 hover:border-orange-500 transition-colors" alt="Galeria" />
+      <img src="/fotos/antigas/foto_antiga3.jpg" class="rounded-xl border border-zinc-800 hover:border-orange-500 transition-colors" alt="Galeria" />
+
+      {galleryPlaceholders.map((_, i) => (
+        <div class={`relative group overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900 flex flex-col items-center justify-center hover:border-orange-500 transition-colors ${i % 3 === 0 ? 'h-64' : 'h-40'}`}>
+           <span class="text-zinc-700 text-[10px] uppercase font-bold">Futura Foto {i + 1}</span>
+           <span class="text-zinc-800 text-[9px] italic">Slot Disponível</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="py-20 bg-orange-600">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-6xl font-impact uppercase italic text-white mb-8">Honramos o Passado, <br/> Construímos o Futuro</h2>
+      <a href="/contactos" class="inline-block bg-black text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-2xl">
+        Junta-te a nós
+      </a>
+    </div>
   </section>
 </Layout>
-

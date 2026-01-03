@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "equipaCasa": "Caxarias",
-    "equipaFora": "Atalaiense",
+    "equipaCasa": "CCD Caxarias",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": 1,
     "golosFora": 1,
     "data": "2025-12-21",
@@ -11,8 +11,8 @@
   },
   {
     "id": 2,
-    "equipaCasa": "Atalaiense",
-    "equipaFora": "Espinheirense",
+    "equipaCasa": "Ud Atalaiense",
+    "equipaFora": "Acr Espinheirense",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-01-11",
@@ -21,8 +21,8 @@
   },
   {
     "id": 3,
-    "equipaCasa": "GD Benfica do Ribatejo",
-    "equipaFora": "Atalaiense",
+    "equipaCasa": "GD Benfica Ribatejo",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": 1,
     "golosFora": 3,
     "data": "2025-09-21",
@@ -31,8 +31,8 @@
   },
   {
     "id": 4,
-    "equipaCasa": "Atalaiense",
-    "equipaFora": "Glória do Ribatejo",
+    "equipaCasa": "Ud Atalaiense",
+    "equipaFora": "Scd Glória",
     "golosCasa": 1,
     "golosFora": 4,
     "data": "2025-09-28",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "equipaCasa": "CDR Alferrarede",
-    "equipaFora": "Atalaiense",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": 2,
     "golosFora": 5,
     "data": "2025-10-05",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "equipaCasa": "Atalaiense",
+    "equipaCasa": "Ud Atalaiense",
     "equipaFora": "ADRC Vasco da Gama",
     "golosCasa": 0,
     "golosFora": 3,
@@ -61,8 +61,8 @@
   },
   {
     "id": 7,
-    "equipaCasa": "Ortiga",
-    "equipaFora": "Atalaiense",
+    "equipaCasa": "Lr Melh. Ortiga",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": 0,
     "golosFora": 1,
     "data": "2025-10-19",
@@ -71,8 +71,8 @@
   },
   {
     "id": 8,
-    "equipaCasa": "Os Lagartos",
-    "equipaFora": "Atalaiense",
+    "equipaCasa": "Gdr Sardoal Os Lagartos",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": 1,
     "golosFora": 2,
     "data": "2025-10-26",
@@ -81,7 +81,7 @@
   },
   {
     "id": 9,
-    "equipaCasa": "Atalaiense",
+    "equipaCasa": "Ud Atalaiense",
     "equipaFora": "AC Pernes",
     "golosCasa": 1,
     "golosFora": 1,
@@ -92,7 +92,7 @@
   {
     "id": 9,
     "equipaCasa": "CDR Alferrarede",
-    "equipaFora": "Atalaiense",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": 1,
     "golosFora": 5,
     "data": "2025-11-09",
@@ -101,8 +101,8 @@
   },
   {
     "id": 10,
-    "equipaCasa": "Atalaiense",
-    "equipaFora": "Abrantes e Benfica B",
+    "equipaCasa": "Ud Atalaiense",
+    "equipaFora": "S. Abrantes Benfica B",
     "golosCasa": 2,
     "golosFora": 0,
     "data": "2025-11-16",
@@ -111,7 +111,7 @@
   },
   {
     "id": 11,
-    "equipaCasa": "Atalaiense",
+    "equipaCasa": "Ud Atalaiense",
     "equipaFora": "Entroncamento AC",
     "golosCasa": "2p",
     "golosFora": 2,
@@ -121,8 +121,8 @@
   },
   {
     "id": 12,
-    "equipaCasa": "Ferreira do Zêzere",
-    "equipaFora": "Atalaiense",
+    "equipaCasa": "Sc Ferreira Zêzere",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": 1,
     "golosFora": 3,
     "data": "2025-11-30",
@@ -131,8 +131,8 @@
   },
   {
     "id": 13,
-    "equipaCasa": "CP Pego",
-    "equipaFora": "Atalaiense",
+    "equipaCasa": "Casa Povo Pego",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": 2,
     "golosFora": 0,
     "data": "2025-12-07",
@@ -141,8 +141,8 @@
   },
   {
     "id": 14,
-    "equipaCasa": "Atalaiense",
-    "equipaFora": "CP Pego",
+    "equipaCasa": "Ud Atalaiense",
+    "equipaFora": "Casa Povo Pego",
     "golosCasa": 1,
     "golosFora": 1,
     "data": "2025-12-14",
@@ -152,7 +152,7 @@
   {
     "id": 15,
     "equipaCasa": "CCD Caxarias",
-    "equipaFora": "Atalaiense",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": 1,
     "golosFora": 1,
     "data": "2025-12-21",
@@ -162,7 +162,7 @@
   {
     "id": 16,
     "equipaCasa": "VFC Mindense",
-    "equipaFora": "Atalaiense",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-01-17",
@@ -172,7 +172,7 @@
   {
     "id": 17,
     "equipaCasa": "ADRC Vasco da Gama",
-    "equipaFora": "Atalaiense",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-01-25",
@@ -181,8 +181,8 @@
   },
   {
     "id": 18,
-    "equipaCasa": "Atalaiense",
-    "equipaFora": "Ortiga",
+    "equipaCasa": "Ud Atalaiense",
+    "equipaFora": "Lr Melh. Ortiga",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-02-01",
@@ -191,8 +191,8 @@
   },
   {
     "id": 19,
-    "equipaCasa": "Atalaiense",
-    "equipaFora": "Os Lagartos",
+    "equipaCasa": "Ud Atalaiense",
+    "equipaFora": "Gdr Sardoal Os Lagartos",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-02-08",
@@ -202,7 +202,7 @@
   {
     "id": 20,
     "equipaCasa": "AC Pernes",
-    "equipaFora": "Atalaiense",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-02-22",
@@ -211,7 +211,7 @@
   },
   {
     "id": 21,
-    "equipaCasa": "Atalaiense",
+    "equipaCasa": "Ud Atalaiense",
     "equipaFora": "CDR Alferrarede",
     "golosCasa": null,
     "golosFora": null,
@@ -221,8 +221,8 @@
   },
   {
     "id": 22,
-    "equipaCasa": "Abrantes e Benfica B",
-    "equipaFora": "Atalaiense",
+    "equipaCasa": "S. Abrantes Benfica B",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-03-15",
@@ -231,8 +231,8 @@
   },
   {
     "id": 23,
-    "equipaCasa": "Atalaiense",
-    "equipaFora": "Ferreira do Zêzere",
+    "equipaCasa": "Ud Atalaiense",
+    "equipaFora": "Sc Ferreira Zêzere",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-03-22",
@@ -241,8 +241,8 @@
   },
   {
     "id": 24,
-    "equipaCasa": "CP Pego",
-    "equipaFora": "Atalaiense",
+    "equipaCasa": "Casa Povo Pego",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-03-29",
@@ -251,7 +251,7 @@
   },
   {
     "id": 25,
-    "equipaCasa": "Atalaiense",
+    "equipaCasa": "Ud Atalaiense",
     "equipaFora": "CCD Caxarias",
     "golosCasa": null,
     "golosFora": null,
@@ -261,8 +261,8 @@
   },
   {
     "id": 26,
-    "equipaCasa": "Espinheirense",
-    "equipaFora": "Atalaiense",
+    "equipaCasa": "Acr Espinheirense",
+    "equipaFora": "Ud Atalaiense",
     "golosCasa": null,
     "golosFora": null,
     "data": "2026-04-19",
@@ -271,7 +271,7 @@
   },
   {
     "id": 27,
-    "equipaCasa": "Atalaiense",
+    "equipaCasa": "Ud Atalaiense",
     "equipaFora": "VFC Mindense",
     "golosCasa": null,
     "golosFora": null,

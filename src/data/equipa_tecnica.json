@@ -24,9 +24,17 @@
     "foto": "/fotos/staff/default_player.jpg"
   },
   {
-    "id": 3,
+    "id": 4,
     "nome": "Maria Castro",
     "cargo": "Fisioterapeuta",
+    "escalao": "Seniores",
+    "epoca": "2025-2026",
+    "foto": "/fotos/staff/default_player.jpg"
+  },
+  {
+    "id": 5,
+    "nome": "Daniel Casaleiro",
+    "cargo": "Treinador GR",
     "escalao": "Seniores",
     "epoca": "2025-2026",
     "foto": "/fotos/staff/default_player.jpg"

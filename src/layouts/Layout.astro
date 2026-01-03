@@ -47,6 +47,8 @@ const siteTitle = `${title} | UD Atalaiense`;
     	<meta property="twitter:title" content={siteTitle} />
     	<meta property="twitter:description" content={description} />
     	<meta property="twitter:image" content={new URL(image, Astro.url)} />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+		<meta name="google-site-verification" content="MjyOjfWKOclT8bk9u46sJ5TUcYfy507M_Jcm8Dm_KIc" />
 	</head>
 	<body class="bg-black text-white min-h-screen flex flex-col">
 		<Navbar />

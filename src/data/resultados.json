@@ -13,11 +13,11 @@
     "id": 2,
     "equipaCasa": "Ud Atalaiense",
     "equipaFora": "Acr Espinheirense",
-    "golosCasa": null,
-    "golosFora": null,
+    "golosCasa": 1,
+    "golosFora": 0,
     "data": "2026-01-11",
     "competicao": "Campeonato Distrital 2º Divisão",
-    "status": "agendado"
+    "status": "terminado"
   },
   {
     "id": 3,

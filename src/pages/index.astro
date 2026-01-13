@@ -18,7 +18,9 @@ interface Resultado {
 }
 
 const resultados = resultadosData as Resultado[];
-const ultimasNoticias = noticiasData.slice(0, 3);
+const ultimasNoticias = [...noticiasData]
+  .sort((a, b) => new Date(b.data).getTime() - new Date(a.data).getTime())
+  .slice(0, 3);
 const proximosJogos = resultados.filter(r => r.status === 'agendado').slice(0, 2);
 const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice(0, 2);
 ---

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nome": "Kit Equipamento de Jogo UDA 2025/2026",
-    "preco": "---",
+    "preco": "38€",
     "descricao": "Conjunto Oficial Completo Equipamento Principal: Camisola de Jogo, Calções e Meias. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/kit_principal.png"
   },
@@ -16,141 +16,155 @@
   {
     "id": 3,
     "nome": "Calções de Jogo UDA 2025/2026",
-    "preco": "---",
+    "preco": "10€",
     "descricao": "Calções oficiais Equipamento Principal. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/calcoes_principal.png"
   },
   {
     "id": 4,
-    "nome": "Meias de Jogo UDA 2025/2026",
-    "preco": "---",
-    "descricao": "Meias oficiais Equipamento Principal. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
+    "nome": "Meias UDA 2025/2026",
+    "preco": "5€",
+    "descricao": "Meias oficiais Equipamento Principal/Treino. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/meias_principal.png"
   },
   {
     "id": 5,
     "nome": "Kit Equipamento GR Jogo Verde UDA 2025/2026",
-    "preco": "---",
+    "preco": "35€",
     "descricao": "Conjunto Oficial Completo Equipamento Principal Guarda-Redes: Camisola de Jogo, Calções e Meias. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/kit_gr_verde.png"
   },
   {
     "id": 6,
     "nome": "Camisola GR de Jogo Verde UDA 2025/2026",
-    "preco": "---",
+    "preco": "25€",
     "descricao": "Camisola Oficial Equipamento Principal Guarda-Redes. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/camisola_gr_verde.png"
   },
   {
     "id": 7,
     "nome": "Calções GR de Jogo Verde UDA 2025/2026",
-    "preco": "---",
+    "preco": "10€",
     "descricao": "Calções Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/calcoes_gr_verde.png"
   },
   {
     "id": 8,
     "nome": "Meias GR de Jogo Verde UDA 2025/2026",
-    "preco": "---",
+    "preco": "5€",
     "descricao": "Meias Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/meias_gr_verde.png"
   },
   {
     "id": 13,
     "nome": "Kit Equipamento GR Jogo Vermelho UDA 2025/2026",
-    "preco": "---",
+    "preco": "35€",
     "descricao": "Conjunto Oficial Completo Equipamento Principal Guarda-Redes: Camisola de Jogo, Calções e Meias. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/kit_gr_vermelho.png"
   },
   {
     "id": 14,
     "nome": "Camisola GR de Jogo Vermelho UDA 2025/2026",
-    "preco": "---",
+    "preco": "25€",
     "descricao": "Camisola Oficial Equipamento Principal Guarda-Redes. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/camisola_gr_vermelho.png"
   },
   {
     "id": 15,
     "nome": "Calções GR de Jogo Vermelho UDA 2025/2026",
-    "preco": "---",
+    "preco": "10€",
     "descricao": "Calções Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/calcoes_gr_vermelho.png"
   },
   {
     "id": 16,
     "nome": "Meias GR de Jogo Vermelho UDA 2025/2026",
-    "preco": "---",
+    "preco": "5€",
     "descricao": "Meias Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/meias_gr_vermelho.png"
   },
   {
     "id": 17,
     "nome": "Kit Equipamento GR Jogo Azul UDA 2025/2026",
-    "preco": "---",
+    "preco": "35€",
     "descricao": "Conjunto Oficial Completo Equipamento Principal Guarda-Redes: Camisola de Jogo, Calções e Meias. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/kit_gr_azul.png"
   },
   {
     "id": 18,
     "nome": "Camisola GR de Jogo Azul UDA 2025/2026",
-    "preco": "---",
+    "preco": "25€",
     "descricao": "Camisola Oficial Equipamento Principal Guarda-Redes. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/camisola_gr_azul.png"
   },
   {
     "id": 19,
     "nome": "Calções GR de Jogo Azul UDA 2025/2026",
-    "preco": "---",
+    "preco": "10€",
     "descricao": "Calções Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/calcoes_gr_azul.png"
   },
   {
     "id": 20,
     "nome": "Meias GR de Jogo Azul UDA 2025/2026",
-    "preco": "---",
+    "preco": "5€",
     "descricao": "Meias Oficiais Equipamento Principal Guarda-Redes. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/meias_gr_azul.png"
   },
   {
     "id": 9,
     "nome": "Kit Equipamento de Treino UDA 2025/2026",
-    "preco": "---",
+    "preco": "22€",
     "descricao": "Conjunto Oficial Completo Equipamento de Treino: Camisola, Calções e Meias. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/kit_treino.png"
   },
   {
     "id": 10,
     "nome": "Camisola de Treino UDA 2025/2026",
-    "preco": "---",
+    "preco": "12€",
     "descricao": "Camisola oficial Equipamento de treino. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/camisola_treino.png"
   },
   {
+    "id": 23,
+    "nome": "Calções de Treino UDA 2025/2026",
+    "preco": "8€",
+    "descricao": "Calções oficiais Equipamento de treino. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
+    "imagem": "/fotos/loja/calcoes_treino.png"
+  },
+  {
     "id": 11,
     "nome": "T-Shirt de Saída UDA 2025/26",
-    "preco": "---",
+    "preco": "12€",
     "descricao": "T-Shirt oficial de saída da equipa. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/tshirt_saida.png"
   },
   {
     "id": 12,
     "nome": "Kit de Atleta Completo UDA 2025/26",
-    "preco": "---",
+    "preco": "100€",
     "descricao": "Conjunto Oficial Completo de Atleta: Fato de Treino (Casaco e Calças), T-shirt de Saída, 2x Kits de Treino (Camisola, Calções e Meias) e Mochila incluída. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/kit_atleta.png"
   },
   {
     "id": 21,
     "nome": "Fato de Treino Atleta UDA 2025/26",
-    "preco": "---",
+    "preco": "34€",
     "descricao": "Fato de Treino Oficial de Atleta: Casaco e Calças. Tamanhos disponíveis: 6, 8, 10, 12, 14, S, M, L, XL",
     "imagem": "/fotos/loja/fato_treino.png"
   },
   {
     "id": 22,
     "nome": "Mochila de Atleta UDA 2025/26",
-    "preco": "---",
+    "preco": "20€",
     "descricao": "Mochila Oficial de Atleta. Tamanho único.",
     "imagem": "/fotos/loja/mochila.png"
+  },
+  {
+    "id": 24,
+    "nome": "Cachecol UDA",
+    "preco": "12€",
+    "descricao": "Cachecol Oficial UD Atalaiense. Tamanho único.",
+    "imagem": "/fotos/loja/cachecol_uda.png"
   }
 ]

@@ -1,0 +1,7 @@
+[
+  { "cargo": "Presidente", "nome": "Nuno Batista" },
+  { "cargo": "Vice-Presidente", "nome": "Cláudia Farto" },
+  { "cargo": "Tesoureiro", "nome": "António Garcia" },
+  { "cargo": "Secretário Geral", "nome": "Maria Eduarda Oliveira" },
+  { "cargo": "Secretário", "nome": "Paulo Petinga" }
+]

@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+import noticiasData from '../data/noticias.json';
+
+// 1. Adiciona aqui os caminhos exatos das fotos que queres ESCONDER da galeria
+const fotosExcluidas = [
+  "/fotos/noticias/feliznatal.jpg",
+  "/fotos/noticias/senioresespinheirensecasa.jpg",
+  "/fotos/noticias/seniorescaxarias.jpg"
+  // Podes adicionar quantas quiseres separadas por vírgula
+];
+
+// 2. Extraímos as imagens
+const imagensBrutas = noticiasData && Array.isArray(noticiasData) 
+  ? noticiasData.flatMap(n => n.imagens || []) 
+  : [];
+
+// 3. Limpamos: remove duplicados, garante que são strings E FILTRA as excluídas
+const todasImagens = [...new Set(imagensBrutas)]
+  .filter(img => 
+    typeof img === 'string' && 
+    img.length > 0 && 
+    !fotosExcluidas.includes(img) // <--- Esta linha faz a magia
+  );
+---
+
+<Layout title="Galeria" description="Fotos da UD Atalaiense">
+  <section class="py-16 bg-zinc-950 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="text-5xl font-impact uppercase italic text-white mb-12">
+        Galeria de <span class="text-orange-500">Fotos</span>
+      </h1>
+
+      {todasImagens.length > 0 ? (
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {todasImagens.map((img) => (
+            <div 
+              class="gallery-trigger group relative aspect-square overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800 cursor-pointer" 
+              data-src={img}
+            >
+              <img 
+                src={img} 
+                alt="Atleta UDA" 
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                onerror="this.style.display='none'" 
+              />
+              <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                 <span class="text-white text-3xl font-bold">+</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-20 text-zinc-500 italic bg-zinc-900 rounded-2xl border border-zinc-800">
+          Nenhuma imagem encontrada nas notícias.
+        </div>
+      )}
+    </div>
+  </section>
+
+  <div id="g-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/95 backdrop-blur-sm">
+    <div class="relative max-w-5xl w-full h-full flex items-center justify-center">
+      <img id="g-modal-img" src="" class="max-w-full max-h-full object-contain rounded-lg" />
+      <button id="g-close" class="absolute top-4 right-4 text-white bg-orange-600 p-3 rounded-full hover:scale-110 transition-all shadow-xl">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const modal = document.getElementById('g-modal');
+  const modalImg = document.getElementById('g-modal-img') as HTMLImageElement;
+  const closeBtn = document.getElementById('g-close');
+  const triggers = document.querySelectorAll('.gallery-trigger');
+
+  const fechar = () => {
+    if (modal) {
+        modal.classList.replace('flex', 'hidden');
+        document.body.style.overflow = 'auto';
+    }
+  };
+
+  triggers.forEach(t => {
+    t.addEventListener('click', () => {
+      const src = (t as HTMLElement).dataset.src;
+      if (src && modal && modalImg) {
+        modalImg.src = src;
+        modal.classList.replace('hidden', 'flex');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  closeBtn?.addEventListener('click', fechar);
+  modal?.addEventListener('click', (e) => { if(e.target === modal) fechar(); });
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') fechar(); });
+</script>

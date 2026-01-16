@@ -1,29 +1,39 @@
----
-interface Props {
-  titulo: string;
-  data: string;
-  resumo: string;
-  imagem: string;
-}
 
-const { titulo, data, resumo, imagem } = Astro.props;
 ---
-<div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-orange-500 transition-all group">
-  <div class="aspect-video bg-zinc-800 overflow-hidden">
-    <img src={imagem} alt={titulo} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+// NewsCard.astro
+const { titulo, data, resumo, imagens } = Astro.props;
+---
+<div 
+  class="news-open-btn bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden group cursor-pointer hover:border-orange-500/50 hover:bg-zinc-800/40 transition-all duration-300 shadow-lg"
+  data-titulo={titulo}
+  data-data={new Date(data).toLocaleDateString('pt-PT')}
+  data-resumo={resumo}
+  data-imagens={JSON.stringify(imagens)} 
+>
+  <div class="relative overflow-hidden">
+    <img 
+      src={imagens[0]} 
+      alt={titulo} 
+      class="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" 
+    />
+    <div class="absolute inset-0 bg-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
   </div>
+  
   <div class="p-6">
-    <span class="text-orange-500 text-xs font-bold uppercase tracking-widest">{new Date(data).toLocaleDateString('pt-PT')}</span>
-    <h3 class="text-xl font-bold mt-2 text-white">{titulo}</h3>
-    <p class="text-zinc-400 text-sm mt-3 line-clamp-2">{resumo}</p>
-    <button 
-      class="news-open-btn mt-4 text-orange-500 text-sm font-bold hover:underline"
-      data-titulo={titulo}
-      data-data={new Date(data).toLocaleDateString('pt-PT')}
-      data-resumo={resumo}
-      data-imagem={imagem}
-    >
-      Ler mais →
-    </button>
+    <span class="text-orange-500 text-xs font-bold uppercase tracking-widest">
+      {new Date(data).toLocaleDateString('pt-PT')}
+    </span>
+    
+    <h3 class="text-xl font-bold mt-2 text-white group-hover:text-orange-500 transition-colors duration-300">
+      {titulo}
+    </h3>
+    
+    <p class="mt-3 text-zinc-400 text-sm line-clamp-2">
+      {resumo}
+    </p>
+
+    <div class="mt-4 flex items-center text-sm font-bold text-zinc-500 group-hover:text-white transition-colors duration-300">
+      Ler notícia completa <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+    </div>
   </div>
 </div>

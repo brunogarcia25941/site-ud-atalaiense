@@ -4,20 +4,20 @@
     "titulo": "Empate em Caxarias mantém o terceiro lugar no campeonato",
     "data": "2025-12-21",
     "resumo": "Depois da Equipa sénior ter conseguido a vantagem no marcador numa parte inicial da partida, a equipa de Caxarias empatou o jogo ainda na primeira parte. Na segunda parte nenhuma das equipas conseguiu chegar com sucesso à baliza adversária, mantendo-se o empate até ao final do jogo.",
-    "imagem": "/fotos/noticias/seniorescaxarias.jpg"
+    "imagens": ["/fotos/noticias/seniorescaxarias.jpg","/fotos/noticias/caxarias21dez25/foto1.jpg","/fotos/noticias/caxarias21dez25/foto2.jpg","/fotos/noticias/caxarias21dez25/foto3.jpg","/fotos/noticias/caxarias21dez25/foto4.jpg"]
   },
   {
     "id": 2,
     "titulo": "Feliz Natal e Próspero Ano Novo!",
     "data": "2025-12-25",
     "resumo": "A direção da União Desportiva Atalaiense deseja a todos um Feliz Natal e um Próspero ano novo!",
-    "imagem": "/fotos/noticias/feliznatal.jpg"
+    "imagens": ["/fotos/noticias/feliznatal.jpg"]
   },
   {
     "id": 3,
     "titulo": "Vitória convincente contra o Espinheirense em casa leva a nossa equipa sénior ao segundo lugar!",
     "data": "2026-01-11",
     "resumo": "Após uma primeira parte sem golos, aos 10 minutos da segunda parte, o nosso número 7, Alexandre Rodrigues, marca o único golo do encontro somando mais 3 pontos para a nossa equipa sénior, que sobe assim ao segundo lugar no campeonato com 21 pontos em 10 jogos a um jogo do fim da primeira volta.",
-    "imagem": "/fotos/noticias/senioresespinheirensecasa.jpg"
+    "imagens": ["/fotos/noticias/senioresespinheirensecasa.jpg","/fotos/noticias/espinheirense11jan26/foto1.jpg","/fotos/noticias/espinheirense11jan26/foto2.jpg","/fotos/noticias/espinheirense11jan26/foto3.jpg","/fotos/noticias/espinheirense11jan26/foto4.jpg","/fotos/noticias/espinheirense11jan26/foto5.jpg","/fotos/noticias/espinheirense11jan26/foto6.jpg","/fotos/noticias/espinheirense11jan26/foto7.jpg","/fotos/noticias/espinheirense11jan26/foto8.jpg",  "/fotos/noticias/espinheirense11jan26/foto9.jpg","/fotos/noticias/espinheirense11jan26/foto10.jpg","/fotos/noticias/espinheirense11jan26/foto11.jpg","/fotos/noticias/espinheirense11jan26/foto12.jpg"]
   }
 ]

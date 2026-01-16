@@ -6,6 +6,7 @@ import noticiasData from '../data/noticias.json';
 import resultadosData from '../data/resultados.json';
 import SponsorsRow from '../components/SponsorsRow.astro';
 
+
 interface Resultado {
   id: number;
   equipaCasa: string;
@@ -23,6 +24,7 @@ const ultimasNoticias = [...noticiasData]
   .slice(0, 3);
 const proximosJogos = resultados.filter(r => r.status === 'agendado').slice(0, 2);
 const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice(0, 2);
+
 ---
 
 <Layout title="Início" description="Bem-vindo ao site oficial da UD Atalaiense. Fica a par de todos os jogos, resultados e notícias do nosso clube.">
@@ -86,47 +88,86 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
   <div id="modal-overlay" class="absolute inset-0 bg-black/90 backdrop-blur-sm"></div>
   
   <div class="relative bg-zinc-900 border border-zinc-800 w-full max-w-2xl max-h-[90vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl">
-    <button id="modal-close" class="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-orange-600 transition-colors">
+    <button id="modal-close" class="absolute top-4 right-4 z-30 bg-black/50 text-white p-2 rounded-full hover:bg-orange-600 transition-colors">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
     </button>
 
-    <div class="overflow-y-auto custom-scrollbar">
-      <img id="modal-img" src="" alt="" class="w-full aspect-video object-cover border-b border-zinc-800" />
-      <div class="p-8">
-        <span id="modal-date" class="text-orange-500 text-xs font-bold uppercase tracking-widest"></span>
-        <h2 id="modal-title" class="text-3xl font-bold mt-2 text-white"></h2>
-        <div id="modal-text" class="py-5 text-zinc-300 leading-relaxed whitespace-pre-line text-lg">
-          </div>
+    <div class="overflow-y-auto custom-scrollbar flex flex-col w-full h-full">
+      
+      <div class="relative group/slider bg-black w-full min-h-[200px] flex-none">
+        <img id="modal-img" src="" alt="" class="w-full h-auto block relative z-10" />
+        
+        <button id="prev-img" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 text-white p-3 rounded-full hover:bg-orange-600 transition-colors hidden group-hover/slider:block">
+          ❮
+        </button>
+        <button id="next-img" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 text-white p-3 rounded-full hover:bg-orange-600 transition-colors hidden group-hover/slider:block">
+          ❯
+        </button>
       </div>
+
+      <div class="p-8 bg-zinc-900 relative z-20 border-t border-zinc-800">
+        <span id="modal-date" class="text-orange-500 text-xs font-bold uppercase tracking-widest block mb-2"></span>
+        <h2 id="modal-title" class="text-3xl font-bold text-white leading-tight"></h2>
+        <div id="modal-text" class="py-5 text-zinc-300 leading-relaxed whitespace-pre-line text-lg"></div>
+      </div>
+      
     </div>
   </div>
 </div>
 
 <script>
+  let currentImagens: string[] = [];
+  let currentIdx = 0;
+
   const modal = document.getElementById('news-modal');
   const overlay = document.getElementById('modal-overlay');
   const closeBtn = document.getElementById('modal-close');
   const openBtns = document.querySelectorAll('.news-open-btn');
-
-  // Elementos internos do modal
+  const mImg = document.getElementById('modal-img') as HTMLImageElement;
   const mTitle = document.getElementById('modal-title');
   const mDate = document.getElementById('modal-date');
   const mText = document.getElementById('modal-text');
-  const mImg = document.getElementById('modal-img') as HTMLImageElement;
+  
+  const btnPrev = document.getElementById('prev-img');
+  const btnNext = document.getElementById('next-img');
+
+  const updateModalImage = () => {
+    if (mImg && currentImagens.length > 0) {
+      mImg.src = currentImagens[currentIdx];
+      // Esconder botões se só houver 1 imagem
+      const isMultiple = currentImagens.length > 1;
+      btnPrev?.classList.toggle('hidden', !isMultiple);
+      btnNext?.classList.toggle('hidden', !isMultiple);
+    }
+  };
 
   openBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const { titulo, data, resumo, imagem } = (btn as HTMLElement).dataset;
+      const { titulo, data, resumo, imagens } = (btn as HTMLElement).dataset;
       
+      currentImagens = JSON.parse(imagens || '[]');
+      currentIdx = 0;
+
       if (mTitle) mTitle.innerText = titulo || '';
       if (mDate) mDate.innerText = data || '';
       if (mText) mText.innerText = resumo || '';
-      if (mImg) mImg.src = imagem || '';
+      
+      updateModalImage();
 
       modal?.classList.remove('hidden');
       modal?.classList.add('flex');
-      document.body.style.overflow = 'hidden'; // Impede o scroll da página atrás
+      document.body.style.overflow = 'hidden';
     });
+  });
+
+  btnPrev?.addEventListener('click', () => {
+    currentIdx = (currentIdx - 1 + currentImagens.length) % currentImagens.length;
+    updateModalImage();
+  });
+
+  btnNext?.addEventListener('click', () => {
+    currentIdx = (currentIdx + 1) % currentImagens.length;
+    updateModalImage();
   });
 
   const closeModal = () => {
@@ -138,17 +179,3 @@ const ultimosResultados = resultados.filter(r => r.status === 'terminado').slice
   closeBtn?.addEventListener('click', closeModal);
   overlay?.addEventListener('click', closeModal);
 </script>
-
-<style>
-  /* Customização do scroll para o modal */
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: #18181b;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #f97316;
-    border-radius: 10px;
-  }
-</style>

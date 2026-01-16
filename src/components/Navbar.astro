@@ -28,13 +28,22 @@
             <div class="absolute left-0 hidden group-hover:block w-52 bg-zinc-900 border border-zinc-800 rounded-md shadow-xl py-2 z-50">
               <a href="/seniores/arquivo" class="block px-4 py-2 text-sm hover:bg-orange-600 transition-colors">Seniores</a>
               <a href="/formacao" class="block px-4 py-2 text-sm hover:bg-orange-600 border-t border-zinc-800 transition-colors">Formação</a>
-              <a href="/direcao" class="block px-4 py-2 text-sm hover:bg-orange-600 border-t border-zinc-800 transition-colors">Direção</a>
               <a href="/calendario" class="block px-4 py-2 text-sm hover:bg-orange-600 border-t border-zinc-800 transition-colors">Calendário de Jogos</a>
               
             </div>
           </div>
 
-          <a href="/clube" class="hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">O Clube</a>
+          <div class="relative group">
+            <button class="hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors flex items-center gap-1">
+              O Clube 
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute left-0 hidden group-hover:block w-52 bg-zinc-900 border border-zinc-800 rounded-md shadow-xl py-2 z-50">
+              <a href="/clube" class="block px-4 py-2 text-sm hover:bg-orange-600 transition-colors">História</a>
+              <a href="/direcao" class="block px-4 py-2 text-sm hover:bg-orange-600 border-t border-zinc-800 transition-colors">Direção</a>
+              <a href="/sede" class="block px-4 py-2 text-sm hover:bg-orange-600 border-t border-zinc-800 transition-colors">Sede</a>
+            </div>
+          </div>
           <a href="/galeria" class="hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">Galeria</a>
           <a href="/loja" class="hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">Loja</a>
           <a href="/parceiros" class="hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">Parceiros</a>
@@ -66,12 +75,19 @@
         <div id="mobile-futebol-menu" class="hidden pl-4 pb-3 space-y-3">
           <a href="/seniores/arquivo" class="block text-zinc-400 hover:text-white text-sm">Seniores</a>
           <a href="/formacao" class="block text-zinc-400 hover:text-white text-sm">Formação</a>
-          <a href="/direcao" class="block text-zinc-400 hover:text-white text-sm">Direção</a>
           <a href="/calendario" class="block text-zinc-400 hover:text-white text-sm">Calendário de Jogos</a>
         </div>
       </div>
 
-      <a href="/clube" class="block hover:text-orange-500 py-3 border-b border-zinc-900 font-medium">O Clube</a>
+      <button id="mobile-clube-btn" class="w-full flex items-center justify-between hover:text-orange-500 py-3 font-medium">
+        O Clube
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="mobile-clube-menu" class="hidden pl-4 pb-3 space-y-3 ">
+        <a href="/clube" class="block text-zinc-400 hover:text-white text-sm">História</a>
+        <a href="/direcao" class="block text-zinc-400 hover:text-white text-sm">Direção</a>
+        <a href="/sede" class="block text-zinc-400 hover:text-white text-sm">Sede</a>
+      </div>
       <a href="/galeria" class="block hover:text-orange-500 py-3 border-b border-zinc-900 font-medium">Galeria</a>
       <a href="/loja" class="block hover:text-orange-500 py-3 border-b border-zinc-900 font-medium">Loja</a>
       <a href="/parceiros" class="block hover:text-orange-500 py-3 border-b border-zinc-900 font-medium">Parceiros</a>
@@ -81,25 +97,35 @@
 </nav>
 
 <script>
-  // Menu Principal Mobile
-  const btn = document.getElementById('mobile-menu-button');
-  const menu = document.getElementById('mobile-menu');
+  // Selecionamos os elementos com os IDs exatos que estão no HTML
+  const mobileMenuBtn = document.getElementById('mobile-menu-button'); // Corrigido
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  const mobileFutebolBtn = document.getElementById('mobile-futebol-button'); // Corrigido
+  const mobileFutebolMenu = document.getElementById('mobile-futebol-menu');
+  
+  const mobileClubeBtn = document.getElementById('mobile-clube-btn');
+  const mobileClubeMenu = document.getElementById('mobile-clube-menu');
 
-  btn?.addEventListener('click', () => {
-    menu?.classList.toggle('hidden');
+  // Abrir/Fechar Menu Principal
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
   });
 
-  // Submenu Futebol Mobile
-  const futebolBtn = document.getElementById('mobile-futebol-button');
-  const futebolMenu = document.getElementById('mobile-futebol-menu');
+  // Abrir/Fechar Submenu Futebol
+  mobileFutebolBtn?.addEventListener('click', () => {
+    mobileFutebolMenu?.classList.toggle('hidden');
+    // Roda a seta
+    mobileFutebolBtn.querySelector('svg')?.classList.toggle('rotate-180');
+  });
 
-  futebolBtn?.addEventListener('click', () => {
-    futebolMenu?.classList.toggle('hidden');
-    // Rodar a seta se quiseres um efeito extra
-    futebolBtn.querySelector('svg')?.classList.toggle('rotate-180');
+  // Abrir/Fechar Submenu Clube
+  mobileClubeBtn?.addEventListener('click', () => {
+    mobileClubeMenu?.classList.toggle('hidden');
+    // Roda a seta
+    mobileClubeBtn.querySelector('svg')?.classList.toggle('rotate-180');
   });
 </script>
-
 <style>
   /* Adiciona uma transição suave para a rotação da seta */
   #mobile-futebol-button svg {

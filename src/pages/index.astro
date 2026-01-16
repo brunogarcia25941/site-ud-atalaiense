@@ -22,7 +22,10 @@ const resultados = resultadosData as Resultado[];
 const ultimasNoticias = [...noticiasData]
   .sort((a, b) => new Date(b.data).getTime() - new Date(a.data).getTime())
   .slice(0, 3);
-const proximosJogos = resultados.filter(r => r.status === 'agendado').slice(0, 2);
+const proximosJogos = resultados
+  .filter(r => r.status === 'agendado')
+  .sort((a, b) => new Date(a.data).getTime() - new Date(b.data).getTime())
+  .slice(0, 2); // Mostra os 2 próximos jogos
 // Ordenar explicitamente por data: da mais recente para a mais antiga
 const ultimosResultados = resultados
   .filter(r => r.status === 'terminado')

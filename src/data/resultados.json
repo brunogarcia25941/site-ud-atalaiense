@@ -1,15 +1,5 @@
 [
   {
-    "id": 1,
-    "equipaCasa": "CCD Caxarias",
-    "equipaFora": "Ud Atalaiense",
-    "golosCasa": 1,
-    "golosFora": 1,
-    "data": "2025-12-21",
-    "competicao": "Campeonato Distrital 2º Divisão",
-    "status": "terminado"
-  },
-  {
     "id": 2,
     "equipaCasa": "Ud Atalaiense",
     "equipaFora": "Acr Espinheirense",

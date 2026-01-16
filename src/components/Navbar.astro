@@ -21,9 +21,7 @@
           <div class="relative group">
             <button class="hover:text-orange-500 px-3 py-2 text-sm font-medium flex items-center gap-1 transition-colors">
               Futebol
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
             <div class="absolute left-0 hidden group-hover:block w-52 bg-zinc-900 border border-zinc-800 rounded-md shadow-xl py-2 z-50">
               <a href="/seniores/arquivo" class="block px-4 py-2 text-sm hover:bg-orange-600 transition-colors">Seniores</a>
@@ -78,11 +76,14 @@
           <a href="/calendario" class="block text-zinc-400 hover:text-white text-sm">Calendário de Jogos</a>
         </div>
       </div>
-
-      <button id="mobile-clube-btn" class="w-full flex items-center justify-between hover:text-orange-500 py-3 font-medium">
-        O Clube
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-      </button>
+      <div class="border-b border-zinc-900">
+        <button id="mobile-clube-btn" class="w-full flex items-center justify-between hover:text-orange-500 py-3 font-medium">
+          O Clube
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+      </div>
       <div id="mobile-clube-menu" class="hidden pl-4 pb-3 space-y-3 ">
         <a href="/clube" class="block text-zinc-400 hover:text-white text-sm">História</a>
         <a href="/direcao" class="block text-zinc-400 hover:text-white text-sm">Direção</a>
@@ -127,8 +128,9 @@
   });
 </script>
 <style>
-  /* Adiciona uma transição suave para a rotação da seta */
-  #mobile-futebol-button svg {
+  /* Adiciona transição suave para as setas de ambos os menus */
+  #mobile-futebol-button svg,
+  #mobile-clube-btn svg {
     transition: transform 0.2s;
   }
 </style>

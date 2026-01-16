@@ -4,26 +4,30 @@ import noticiasData from '../data/noticias.json';
 
 // 1. Adiciona aqui os caminhos exatos das fotos que queres ESCONDER da galeria
 const fotosExcluidas = [
-  "/fotos/noticias/feliznatal.jpg",
   "/fotos/noticias/senioresespinheirensecasa.jpg",
   "/fotos/noticias/seniorescaxarias.jpg"
   // Podes adicionar quantas quiseres separadas por vírgula
 ];
 
-// 2. Extraímos as imagens
-const imagensBrutas = noticiasData && Array.isArray(noticiasData) 
-  ? noticiasData.flatMap(n => n.imagens || []) 
+// 2. Ordenar as notícias pela data (Mais Recente primeiro)
+// Criamos uma cópia [...noticiasData] para não alterar o ficheiro original durante o processo
+const noticiasOrdenadas = [...noticiasData].sort((a, b) => {
+  return new Date(b.data).getTime() - new Date(a.data).getTime();
+});
+
+// 3. Extrair as imagens das notícias JÁ ORDENADAS
+const imagensBrutas = noticiasOrdenadas && Array.isArray(noticiasOrdenadas) 
+  ? noticiasOrdenadas.flatMap(n => n.imagens || []) 
   : [];
 
-// 3. Limpamos: remove duplicados, garante que são strings E FILTRA as excluídas
+// 4. Limpeza: remove duplicados, garante que são strings e aplica a blacklist
 const todasImagens = [...new Set(imagensBrutas)]
   .filter(img => 
     typeof img === 'string' && 
     img.length > 0 && 
-    !fotosExcluidas.includes(img) // <--- Esta linha faz a magia
+    !fotosExcluidas.includes(img)
   );
 ---
-
 <Layout title="Galeria" description="Fotos da UD Atalaiense">
   <section class="py-16 bg-zinc-950 min-h-screen">
     <div class="max-w-7xl mx-auto px-4">

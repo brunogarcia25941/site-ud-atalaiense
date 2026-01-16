@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import noticiasData from '../data/noticias.json';
+import { Image } from 'astro:assets';
 
 // 1. Adiciona aqui os caminhos exatos das fotos que queres ESCONDER da galeria
 const fotosExcluidas = [
@@ -45,6 +46,9 @@ const todasImagens = [...new Set(imagensBrutas)]
               <img 
                 src={img} 
                 alt="Atleta UDA" 
+                width="400" 
+                loading="lazy"
+                decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 onerror="this.style.display='none'" 
               />

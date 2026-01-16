@@ -38,6 +38,7 @@ const epocaTitulo = epoca ? epoca.replace('-', '/') : '';
           nome={jogador.nome} 
           numero={jogador.numero}
           foto={jogador.foto}
+          galeria={jogador.galeria}
         />
       ))}
     </div>
@@ -45,3 +46,73 @@ const epocaTitulo = epoca ? epoca.replace('-', '/') : '';
     
   </section>
 </Layout>
+<div id="player-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/95 backdrop-blur-md">
+  <div class="relative max-w-4xl w-full flex flex-col items-center">
+    <button id="close-player-modal" class="cursor-pointer absolute -top-12 right-0 text-white hover:text-orange-500 transition-colors">
+      FECHAR (X)
+    </button>
+    
+    <div class="relative w-full aspect-square md:aspect-video flex items-center justify-center bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+      <img id="player-modal-img" src="" class="max-w-full max-h-full object-contain" />
+      
+      <button id="prev-player-img" class="absolute left-4 p-2 bg-black/50 rounded-full hover:bg-orange-600">❮</button>
+      <button id="next-player-img" class="absolute right-4 p-2 bg-black/50 rounded-full hover:bg-orange-600">❯</button>
+    </div>
+    
+    <h2 id="player-modal-name" class="mt-6 text-2xl font-impact italic uppercase text-white tracking-widest"></h2>
+    <p id="player-img-counter" class="text-orange-500 text-sm font-bold"></p>
+  </div>
+</div>
+<script>
+  let galeriaAtual: string[] = [];
+  let indexAtual = 0;
+
+  const modal = document.getElementById('player-modal');
+  const mImg = document.getElementById('player-modal-img') as HTMLImageElement;
+  const mName = document.getElementById('player-modal-name');
+  const mCounter = document.getElementById('player-img-counter');
+  
+  const cards = document.querySelectorAll('.player-card');
+
+  const updateImg = () => {
+    if (mImg && galeriaAtual.length > 0) {
+      mImg.src = galeriaAtual[indexAtual];
+      if (mCounter) mCounter.innerText = `${indexAtual + 1} / ${galeriaAtual.length}`;
+    }
+  };
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const { nome, galeria } = (card as HTMLElement).dataset;
+      const fotos = JSON.parse(galeria || '[]');
+      
+      if (fotos.length > 0) {
+        galeriaAtual = fotos;
+        indexAtual = 0;
+        if (mName) mName.innerText = nome || '';
+        updateImg();
+        modal?.classList.replace('hidden', 'flex');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  // Botões próximo/anterior (reaproveitando a lógica que já usaste nas notícias)
+  document.getElementById('prev-player-img')?.addEventListener('click', () => {
+    indexAtual = (indexAtual - 1 + galeriaAtual.length) % galeriaAtual.length;
+    updateImg();
+  });
+
+  document.getElementById('next-player-img')?.addEventListener('click', () => {
+    indexAtual = (indexAtual + 1) % galeriaAtual.length;
+    updateImg();
+  });
+
+  const fechar = () => {
+    modal?.classList.replace('flex', 'hidden');
+    document.body.style.overflow = 'auto';
+  };
+
+  document.getElementById('close-player-modal')?.addEventListener('click', fechar);
+  modal?.addEventListener('click', (e) => { if(e.target === modal) fechar(); });
+</script>

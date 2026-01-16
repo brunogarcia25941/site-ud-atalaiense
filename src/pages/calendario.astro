@@ -22,36 +22,53 @@ const proximosJogos = resultados.filter(r => r.status === 'agendado');
 const resultadosPassados = resultados.filter(r => r.status === 'terminado').reverse();
 ---
 
-<Layout title="Calendário de Jogos" description="Não percas nenhum jogo! Consulta o calendário completo das equipas da UD Atalaiense no Parque Desportivo Municipal de Atalaia.">
-  <section class="max-w-4xl mx-auto px-4 py-12">
-    <header class="mb-12">
-      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 italic">Calendário <span class="text-orange-500">2025/26</span></h1>
-      <p class="text-zinc-400">Consulta todos os jogos e resultados da nossa equipa sénior.</p>
+<Layout title="Calendário de Jogos" description="Consulta o calendário completo e resultados da UD Atalaiense.">
+  <section class="max-w-7xl mx-auto px-4 py-12">
+    <header class="mb-12 border-b border-zinc-800 pb-8">
+      <h1 class="text-4xl md:text-6xl font-impact text-white mb-4 italic uppercase tracking-tighter">
+        Calendário <span class="text-orange-500">2025/26</span>
+      </h1>
+      <p class="text-zinc-400 max-w-2xl text-lg">
+        Consulta todos os jogos e resultados da nossa equipa sénior.
+      </p>
     </header>
 
-    {/* Próximos Jogos */}
-    <div class="mb-16">
-      <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-        <span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
-        Próximos Jogos
-      </h2>
-      <div class="space-y-4">
-        {proximosJogos.length > 0 ? (
-          proximosJogos.map(jogo => <ResultCard {...jogo} />)
-        ) : (
-          <p class="text-zinc-500 italic py-4">Não existem jogos agendados de momento.</p>
-        )}
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+      
+      {/* Coluna: Resultados Anteriores (Esquerda no PC / Baixo no Mobile) */}
+      <div class="order-2 lg:order-1">
+        <h2 class="text-2xl font-impact italic uppercase tracking-wider text-white mb-8 flex items-center gap-3">
+          <span class="w-8 h-1 bg-zinc-700"></span>
+          Resultados Anteriores
+        </h2>
+        <div class="space-y-4">
+          {resultadosPassados.length > 0 ? (
+            resultadosPassados.map(resultado => (
+              <ResultCard {...resultado} />
+            ))
+          ) : (
+            <p class="text-zinc-500 italic py-4">Ainda não foram realizados jogos esta época.</p>
+          )}
+        </div>
       </div>
-    </div>
 
-    {/* Resultados Anteriores */}
-    <div>
-      <h2 class="text-2xl font-bold text-white mb-6">Resultados Anteriores</h2>
-      <div class="space-y-4">
-        {resultadosPassados.map(resultado => (
-          <ResultCard {...resultado} />
-        ))}
+      {/* Coluna: Próximos Jogos (Direita no PC / Topo no Mobile) */}
+      <div class="order-1 lg:order-2">
+        <h2 class="text-2xl font-impact italic uppercase tracking-wider text-white mb-8 flex items-center gap-3">
+          <span class="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></span>
+          Próximos Jogos
+        </h2>
+        <div class="space-y-4">
+          {proximosJogos.length > 0 ? (
+            proximosJogos.map(jogo => <ResultCard {...jogo} />)
+          ) : (
+            <div class="bg-zinc-900/50 border border-dashed border-zinc-800 rounded-xl p-8 text-center">
+              <p class="text-zinc-500 italic">Não existem jogos agendados de momento.</p>
+            </div>
+          )}
+        </div>
       </div>
+
     </div>
   </section>
 </Layout>

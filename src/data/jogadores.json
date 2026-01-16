@@ -5,7 +5,8 @@
     "numero": 15,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/joao_silva.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "numero": 7,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/alexandre_rodrigues.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/espinheirense11jan26/foto2.jpg","/fotos/noticias/espinheirense11jan26/foto8.jpg"]
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "numero": 5,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/rodrigo_dias.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "numero": 4,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/luis_garcia.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/caxarias21dez25/foto1.jpg","/fotos/noticias/espinheirense11jan26/foto4.jpg"]
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "numero": 9,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/miguel_santos.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/espinheirense11jan26/foto5.jpg"]
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "numero": 1,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/paulo_santana.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/caxarias21dez25/foto4.jpg"]
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "numero": 11,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/leandro_abreu.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/espinheirense11jan26/foto1.jpg","/fotos/noticias/espinheirense11jan26/foto4.jpg"]
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "numero": 3,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/afonso_bonacho.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "numero": 8,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/joao_ferreira.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
   "id": 10,
@@ -93,7 +102,8 @@
     "numero": 47,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 14,
@@ -101,7 +111,8 @@
     "numero": 22,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 15,
@@ -109,7 +120,8 @@
     "numero": 19,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 16,
@@ -117,7 +129,8 @@
     "numero": 12,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 17,
@@ -125,7 +138,8 @@
     "numero": 18,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 18,
@@ -133,7 +147,8 @@
     "numero": 17,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/espinheirense11jan26/foto10.jpg"]
   },
   {
     "id": 19,
@@ -141,7 +156,8 @@
     "numero": 20,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 20,
@@ -149,7 +165,8 @@
     "numero": 21,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/caxarias21dez25/foto3.jpg"]
   },
   {
     "id": 21,
@@ -157,7 +174,8 @@
     "numero": 2,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 22,
@@ -165,7 +183,8 @@
     "numero": 16,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/espinheirense11jan26/foto11.jpg"]
   },
   {
     "id": 23,
@@ -173,7 +192,8 @@
     "numero": 10,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/caxarias21dez25/foto2.jpg"]
   },
   {
     "id": 24,
@@ -181,7 +201,8 @@
     "numero": 14,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":["/fotos/noticias/espinheirense11jan26/foto9.jpg","/fotos/noticias/espinheirense11jan26/foto12.jpg"]
   },
   {
     "id": 25,
@@ -189,7 +210,8 @@
     "numero": 6,
     "escalao": "Seniores",
     "foto": "/fotos/jogadores/seniores/seniores2526/default_player.jpg",
-    "epoca": "2025-2026"
+    "epoca": "2025-2026",
+    "galeria":[]
   },
   {
     "id": 26,

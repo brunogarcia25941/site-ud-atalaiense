@@ -24,10 +24,10 @@ const ultimasNoticias = [...noticiasData]
   .slice(0, 3);
 const proximosJogos = resultados.filter(r => r.status === 'agendado').slice(0, 2);
 // Ordenar explicitamente por data: da mais recente para a mais antiga
-const ultimosResultados = [...resultadosData]
+const ultimosResultados = resultados
+  .filter(r => r.status === 'terminado')
   .sort((a, b) => new Date(b.data).getTime() - new Date(a.data).getTime())
-  .slice(0, 2); // Ajusta o número (4) para quantos queres mostrar
-
+  .slice(0, 2); // Mostra os 2 resultados mais recentes
 ---
 
 <Layout title="Início" description="Bem-vindo ao site oficial da UD Atalaiense. Fica a par de todos os jogos, resultados e notícias do nosso clube.">

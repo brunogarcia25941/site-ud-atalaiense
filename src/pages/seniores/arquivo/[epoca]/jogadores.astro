@@ -46,7 +46,7 @@ const epocaTitulo = epoca ? epoca.replace('-', '/') : '';
     
   </section>
 </Layout>
-<div id="player-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/95 backdrop-blur-md">
+<!--<div id="player-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/95 backdrop-blur-md">
   <div class="relative max-w-4xl w-full flex flex-col items-center">
     <button id="close-player-modal" class="cursor-pointer absolute -top-12 right-0 text-white hover:text-orange-500 transition-colors">
       FECHAR (X)
@@ -62,7 +62,7 @@ const epocaTitulo = epoca ? epoca.replace('-', '/') : '';
     <h2 id="player-modal-name" class="mt-6 text-2xl font-impact italic uppercase text-white tracking-widest"></h2>
     <p id="player-img-counter" class="text-orange-500 text-sm font-bold"></p>
   </div>
-</div>
+</div> 
 <script>
   let galeriaAtual: string[] = [];
   let indexAtual = 0;
@@ -115,4 +115,4 @@ const epocaTitulo = epoca ? epoca.replace('-', '/') : '';
 
   document.getElementById('close-player-modal')?.addEventListener('click', fechar);
   modal?.addEventListener('click', (e) => { if(e.target === modal) fechar(); });
-</script>
+</script>-->

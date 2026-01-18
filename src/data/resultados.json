@@ -153,11 +153,11 @@
     "id": 16,
     "equipaCasa": "VFC Mindense",
     "equipaFora": "Ud Atalaiense",
-    "golosCasa": null,
-    "golosFora": null,
+    "golosCasa": 0,
+    "golosFora": 3,
     "data": "2026-01-17",
     "competicao": "Campeonato Distrital 2º Divisão",
-    "status": "agendado"
+    "status": "terminado"
   },
   {
     "id": 17,

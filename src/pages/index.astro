@@ -94,7 +94,7 @@ const ultimosResultados = resultados
   <div id="modal-overlay" class="absolute inset-0 bg-black/90 backdrop-blur-sm"></div>
   
   <div class="relative bg-zinc-900 border border-zinc-800 w-full max-w-2xl max-h-[90vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl">
-    <button id="modal-close" class="absolute top-4 right-4 z-30 bg-black/50 text-white p-2 rounded-full hover:bg-orange-600 transition-colors">
+    <button id="modal-close" class="absolute top-4 right-4 z-30 bg-black/50 text-white p-2 rounded-full hover:bg-orange-600 transition-colors md:right-8">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
     </button>
 
@@ -102,11 +102,12 @@ const ultimosResultados = resultados
       
       <div class="relative group/slider bg-black w-full min-h-[200px] flex-none">
         <img id="modal-img" src="" alt="" class="w-full h-auto block relative z-10" />
-        
-        <button id="prev-img" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 text-white p-3 rounded-full hover:bg-orange-600 transition-colors hidden group-hover/slider:block">
+  
+        <button id="prev-img" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 text-white p-3 rounded-full hover:bg-orange-600 transition-all opacity-0 group-hover/slider:opacity-100 hidden">
           ❮
         </button>
-        <button id="next-img" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 text-white p-3 rounded-full hover:bg-orange-600 transition-colors hidden group-hover/slider:block">
+
+        <button id="next-img" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 text-white p-3 rounded-full hover:bg-orange-600 transition-all opacity-0 group-hover/slider:opacity-100 hidden">
           ❯
         </button>
       </div>
@@ -148,22 +149,37 @@ const ultimosResultados = resultados
   };
 
   openBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const { titulo, data, resumo, imagens } = (btn as HTMLElement).dataset;
-      
-      currentImagens = JSON.parse(imagens || '[]');
-      currentIdx = 0;
+      btn.addEventListener('click', () => {
+    const { titulo, data, resumo, imagens } = (btn as HTMLElement).dataset;
+    
+    currentImagens = JSON.parse(imagens || '[]');
+    currentIdx = 0;
 
-      if (mTitle) mTitle.innerText = titulo || '';
-      if (mDate) mDate.innerText = data || '';
-      if (mText) mText.innerText = resumo || '';
-      
-      updateModalImage();
+    // --- LÓGICA DAS SETAS ---
+    const btnPrev = document.getElementById('prev-img');
+    const btnNext = document.getElementById('next-img');
 
-      modal?.classList.remove('hidden');
-      modal?.classList.add('flex');
-      document.body.style.overflow = 'hidden';
-    });
+    if (currentImagens.length > 1) {
+      // Se houver mais que uma imagem, removemos o 'hidden' para permitir que o hover as mostre
+      btnPrev?.classList.remove('hidden');
+      btnNext?.classList.remove('hidden');
+    } else {
+      // Se houver apenas uma, garantimos que ficam escondidas
+      btnPrev?.classList.add('hidden');
+      btnNext?.classList.add('hidden');
+    }
+    // -----------------------
+
+    if (mTitle) mTitle.innerText = titulo || '';
+    if (mDate) mDate.innerText = data || '';
+    if (mText) mText.innerText = resumo || '';
+    
+    updateModalImage();
+
+    modal?.classList.remove('hidden');
+    modal?.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+      });
   });
 
   btnPrev?.addEventListener('click', () => {
